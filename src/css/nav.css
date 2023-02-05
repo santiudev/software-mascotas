@@ -1,0 +1,33 @@
+nav{
+	height: 6rem;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+	box-shadow: 0 4px 2rem;
+}
+
+.contenedor-botones{
+	height: 100%;
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: .7rem;
+	margin-left: 3rem;
+}
+
+.separador{
+	font-size: 2rem;
+	margin: 0;
+	padding-bottom: .6rem;
+}
+
+.contenedor-elementos{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
