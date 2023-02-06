@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/BtnLateral.css";
+import "../../css/nav/BtnLateral.css";
 
 const BtnLateral = ({ src, alt }) => {
 	return(

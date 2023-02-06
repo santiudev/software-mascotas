@@ -1,0 +1,12 @@
+@font-face {
+	font-family: letra-titulo;
+	src: url(../../fuente/Helv-Children.woff);
+}
+
+.letra-titulo {
+	font-family: letra-titulo;
+	font-size: 3rem;
+	margin: 0;
+	padding-bottom: .8rem;
+	white-space: nowrap;
+}

@@ -3,7 +3,7 @@ nav{
 	background-color: white;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	user-select: none;
 	box-shadow: 0 4px 2rem;
 }
@@ -15,7 +15,6 @@ nav{
 	align-items: center;
 	justify-content: flex-start;
 	gap: .7rem;
-	margin-left: 3rem;
 }
 
 .separador{

@@ -1,11 +1,11 @@
 import React from "react";
-import "../css/nav.css";
-import Logo from "./logo";
+import "../../css/nav/nav.css";
+import LetraTitulo from "../principales/LetraTitulo";
 import BtnNav from "./btnNav";
 import BtnLateral from "./BtnLateral"
-import BtnAdoptar from "./btnAdoptar";
-import imgSearch from "../iconos/search.png";
-import imgLogin from "../iconos/login 2.png"
+import BtnPrincipal from "../principales/btnPrincipal";
+import imgSearch from "../../iconos/search.png";
+import imgLogin from "../../iconos/login 2.png"
 import { useState } from 'react';
 
 /*
@@ -57,7 +57,10 @@ const Nav = () => {
 
 	return(
 		<nav>
-			<Logo />
+			<LetraTitulo
+				texto="Ho-Pet"
+				color="#DE341D"
+			/>
 			<div className="contenedor-botones">
 				{
 					boton.map((btn, indice)=>{
@@ -80,9 +83,11 @@ const Nav = () => {
         />
         <BtnLateral 
           src={imgLogin}
-          alt="Search"
+          alt="Login"
         />
-        <BtnAdoptar />
+        <BtnPrincipal
+					texto="Adoptar"
+				/>
       </div>
     </nav>
 	);

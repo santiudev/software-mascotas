@@ -1,7 +1,7 @@
 import React from "react";
-import "../css/btnNav.css";
+import "../../css/nav/btnNav.css";
 
-const btnNav = ({ clase, texto, onClick }) => {
+const BtnNav = ({ clase, texto, onClick }) => {
 	return(
     <button className={`btn ${clase}`} onClick={onClick} type="button">
 			{texto}
@@ -9,4 +9,4 @@ const btnNav = ({ clase, texto, onClick }) => {
 	);
 };
 
-export default btnNav;
+export default BtnNav;
