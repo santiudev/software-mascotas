@@ -2,16 +2,16 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.http import FileResponse
 from rest_framework import permissions
+import rest_framework
 from . import utilities
 from . import models
 
 class HtmlToImage(APIView):
     permission_classes = [permissions.AllowAny]
 
-    def get(self, request, format=None):
-        
+    def get(self, request: rest_framework.request.Request, format=None):
         html = request.GET.get('html')
-        css = request.GET.get('css')
+        css = request.GET.get('css','')
         
         if html != None:
             filename = utilities.get_file_name(html,css) + '.png'
