@@ -1,4 +1,4 @@
-nav{
+.nav{
 	height: 6rem;
 	background-color: white;
 	display: flex;
@@ -8,7 +8,7 @@ nav{
 	box-shadow: 0 4px 2rem;
 }
 
-.contenedor-botones{
+.nav__contenedor-botones{
 	height: 100%;
 	width: 60%;
 	display: flex;
@@ -17,16 +17,16 @@ nav{
 	gap: .7rem;
 }
 
-.separador{
-	font-size: 2rem;
-	margin: 0;
-	padding-bottom: .6rem;
-}
-
-.contenedor-elementos{
+.nav__contenedor-elementos{
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
+}
+
+.nav__separador{
+	font-size: 2rem;
+	margin: 0;
+	padding-bottom: .6rem;
 }

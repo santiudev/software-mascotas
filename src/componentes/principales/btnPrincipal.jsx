@@ -1,13 +1,17 @@
 import React from "react";
-import "../../css/principales/btnPrincipal.css";
+import styles from "../../css/principales/btnPrincipal.module.css";
 import imgPaw from "../../iconos/paw.png";
 
 const BtnPrincipal = ({ texto }) => {
 	return(
-		<div className="btn-contenedor">
-				<p className="btn-parrafo">{texto}</p>
-				<img src={imgPaw} alt="buscador" className="btn-img" />
-		</div>
+		<button className={styles.btn} type="button">
+				<p className={styles.btn__text}>{texto}</p>
+				<img 
+					src={imgPaw}
+					className={styles.btn__img}
+					alt="buscador"
+				/>
+		</button>
 	);
 };
 

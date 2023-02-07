@@ -1,9 +1,9 @@
-.btn-buscar{
+.btn-lateral{
 	height: 1.8rem;
 	width: 1.8rem;
 	cursor: pointer;
 }
 
-.img-Buscar{
+.btn-lateral__img{
 	width: 100%;
 }

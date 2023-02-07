@@ -1,9 +1,13 @@
 import React from "react";
-import "../../css/nav/btnNav.css";
+import styles from "../../css/nav/btnNav.module.css";
 
 const BtnNav = ({ clase, texto, onClick }) => {
 	return(
-    <button className={`btn ${clase}`} onClick={onClick} type="button">
+    <button 
+			className={`${styles.btn} ${styles[clase]}`}
+			onClick={onClick}
+			type="button"
+		>
 			{texto}
 		</button>
 	);

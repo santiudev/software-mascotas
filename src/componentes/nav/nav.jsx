@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/nav/nav.css";
+import styles from "../../css/nav/nav.module.css";
 import LetraTitulo from "../principales/LetraTitulo";
 import BtnNav from "./btnNav";
 import BtnLateral from "./BtnLateral"
@@ -14,69 +14,74 @@ import { useState } from 'react';
 	o agregar elementos al array para modificar el nav.
 */
 const botones = [
-	{clase: "btn-principal", texto: "Inicio"},
-	{clase: "btn-secundario", texto: "Perdidos"},
-	{clase: "btn-secundario", texto: "Encontrados"},
-	{clase: "btn-secundario", texto: "Adoptar"},
-	{clase: "btn-secundario", texto: "Blog"},
-	{clase: "btn-secundario", texto: "Contacto"}
+	{clase: "btn--principal", texto: "Inicio"},
+	{clase: "btn--secundario", texto: "Perdidos"},
+	{clase: "btn--secundario", texto: "Encontrados"},
+	{clase: "btn--secundario", texto: "Adoptar"},
+	{clase: "btn--secundario", texto: "Blog"},
+	{clase: "btn--secundario", texto: "Contacto"}
 ];
+
+function modificarBotones(id){
+	const newBotones = botones.map((btn, indice) => {
+		if(indice === id){
+			/*
+				Si el id del boton clickeado anteriormente es igual al indice del boton recorrido por botones.map,
+				vamos a retornar el objeto "btn" pero modificaremos su clase que anteriormente era btn--secunadrio,
+				a la clase btn--principal.
+			*/
+			return {
+				...btn,
+				clase: "btn--principal"
+			}
+		}else if(btn.clase !== 'btn--principal'){
+			//No cambia el objeto "btn".
+			return btn;
+		}else{
+			/* 
+				Si no pasa ningun caso anterior hacemos los mismo que el primer caso pero cambiando su clase de
+				btn--principal a btn--secundario.
+			*/
+			return {
+				...btn,
+				clase: "btn--secundario"
+			};
+		}
+	});
+	// Retorna el nuevo array "newBotones"
+	return newBotones;
+}
 
 const Nav = () => {
 	const [boton, setBoton] = useState(botones);
 
-	function modificarBotones(id){
-		const newBotones = botones.map((btn, indice) => {
-			if(indice === id){
-        /*
-          Si el id del boton clickeado anteriormente es igual al indice del boton recorrido por botones.map,
-          vamos a retornar el objeto "btn" pero modificaremos su clase que anteriormente era btn-secunadrio,
-          a la clase btn-principal.
-        */
-				return {
-					...btn,
-					clase: "btn-principal"
-				}
-			}else if(btn.clase !== 'btn-principal'){
-				//No cambia el objeto "btn".
-				return btn;
-			}else{
-			  /* 
-          Si no pasa ningun caso anterior hacemos los mismo que el primer caso pero cambiando su clase de
-          btn-principal a btn-secundario.
-        */
-			  return {
-          ...btn,
-          clase: "btn-secundario"
-			  };
-			}
-		});
-    // Vuelve a renderizar los botones con el nuevo array "newBotones"
-    setBoton(newBotones);
-	}
-
 	return(
-		<nav>
+		<nav className={styles.nav}>
 			<LetraTitulo
 				texto="Ho-Pet"
 				color="#DE341D"
 			/>
-			<div className="contenedor-botones">
+			<div className={styles["nav__contenedor-botones"]}>
 				{
 					boton.map((btn, indice)=>{
 						return(
 							<BtnNav
 								clase={btn.clase}
 								texto={btn.texto}
-								onClick={() => modificarBotones(indice)}
+								/*
+									La función "modificarBotones" retorna una nueva matriz "newBotones"
+									y esta se asigna al hook de estado "boton" mediante la función "setBoton".
+									Esto provocará un renderizado de los componentes de los botones.
+								*/
+								onClick={() => setBoton(modificarBotones(indice))}
 								key={indice}
 							/>
 						);
 					})
 				}
 			</div>
-      <div className="contenedor-elementos">
-        <p className="separador">|</p>
+      <div className={styles["nav__contenedor-elementos"]}>
+        <p className={styles.nav__separador}>|</p>
         <BtnLateral 
           src={imgSearch}
           alt="Search"

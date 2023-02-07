@@ -1,10 +1,14 @@
 import React from "react";
-import "../../css/nav/BtnLateral.css";
+import styles from "../../css/nav/btnLateral.module.css";
 
 const BtnLateral = ({ src, alt }) => {
 	return(
-		<div className="btn-buscar">
-			<img src={src} alt={alt} className="img-Buscar" />
+		<div className={styles["btn-lateral"]}>
+			<img 
+				src={src}
+				className={styles["btn-lateral__img"]}
+				alt={alt}
+			/>
 		</div>
 	);
 };

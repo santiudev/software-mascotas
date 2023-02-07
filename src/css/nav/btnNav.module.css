@@ -2,24 +2,24 @@
 	color: rgba(0, 0, 0, 0.75);
 	font-size: 1.4rem;
 	border: none;
-	background-color: white;
 	font-weight: 700;
 	clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
 	border-radius: 10px 10px 20px 20px;
 	cursor: pointer;
-	padding: .5rem 1rem
+	padding: .5rem 1rem;
 }
 
-.btn-principal {
+.btn--principal {
 	background-color: #DE341D;
 	color: white;
 }
 
-.btn-secundario {
+.btn--secundario {
 	transition: all .3s ease;
+	background-color: transparent;
 }
 
-.btn-secundario:hover {
+.btn--secundario:hover {
 	background-color: #DE341D;
 	color: white
 }

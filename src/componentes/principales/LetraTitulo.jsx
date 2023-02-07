@@ -1,9 +1,9 @@
 import React from "react";
-import "../../css/principales/letraTitulo.css";
+import styles from "../../css/principales/letraTitulo.module.css";
 
 const LetraTitulo = ({ texto, color }) => {
 	return(
-    <p className="letra-titulo" style={{color: color}}>{texto}</p>
+    <p className={styles["letra-titulo"]} style={{color: color}}>{texto}</p>
 	);
 };
 
