@@ -1,0 +1,33 @@
+.card {
+  width: 10%;
+  height: 10%;
+  margin: 1rem 1rem;
+  padding: 2%;
+  background: linear-gradient(120deg, #9A5D30 16.69%, #FAFAFA 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+button {
+  height: fit-content;
+  width: fit-content;
+  padding: 0;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+button > img {
+  transition: all 200ms ease;
+}
+
+button > img:hover {
+  transform: scale(1.3);
+  transition: all 200ms ease;
+}
+
+.arrow {
+  rotate: 90deg;
+}
