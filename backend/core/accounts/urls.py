@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.HtmlToImage.as_view()),
+    path('login/', views.LoginView.as_view(), name='login'),
 ]

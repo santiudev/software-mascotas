@@ -4,7 +4,6 @@ from django.http import FileResponse
 from rest_framework import permissions
 import rest_framework
 from . import utilities
-from . import models
 
 class HtmlToImage(APIView):
     permission_classes = [permissions.AllowAny]
