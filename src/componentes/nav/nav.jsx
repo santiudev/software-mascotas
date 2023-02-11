@@ -1,12 +1,19 @@
-import React from "react";
+// React
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+
+// Estilos
 import styles from "../../css/nav/nav.module.css";
+
+// Componentes
 import LetraTitulo from "../principales/LetraTitulo";
 import BtnNav from "./btnNav";
 import BtnLateral from "./BtnLateral"
 import BtnPrincipal from "../principales/btnPrincipal";
+
+// Imágenes
 import imgSearch from "../../iconos/search.png";
 import imgLogin from "../../iconos/login 2.png"
-import { useState } from 'react';
 
 /*
 	Array formado de objetos que permite la creación
@@ -14,12 +21,12 @@ import { useState } from 'react';
 	o agregar elementos al array para modificar el nav.
 */
 const botones = [
-	{clase: "btn--principal", texto: "Inicio"},
-	{clase: "btn--secundario", texto: "Perdidos"},
-	{clase: "btn--secundario", texto: "Encontrados"},
-	{clase: "btn--secundario", texto: "Adoptar"},
-	{clase: "btn--secundario", texto: "Blog"},
-	{clase: "btn--secundario", texto: "Contacto"}
+	{clase: "btn--principal", texto: "Inicio", path: "/"},
+	{clase: "btn--secundario", texto: "Perdidos", path: "/perdidos"},
+	{clase: "btn--secundario", texto: "Encontrados", path: "/encontrados"},
+	{clase: "btn--secundario", texto: "Adoptar", path: "/adoptar"},
+	{clase: "btn--secundario", texto: "Blog", path: "/blog"},
+	{clase: "btn--secundario", texto: "Contacto", path: "/contacto"}
 ];
 
 function modificarBotones(id){
@@ -65,17 +72,18 @@ const Nav = () => {
 				{
 					boton.map((btn, indice)=>{
 						return(
-							<BtnNav
-								clase={btn.clase}
-								texto={btn.texto}
-								/*
-									La función "modificarBotones" retorna una nueva matriz "newBotones"
-									y esta se asigna al hook de estado "boton" mediante la función "setBoton".
-									Esto provocará un renderizado de los componentes de los botones.
-								*/
-								onClick={() => setBoton(modificarBotones(indice))}
-								key={indice}
-							/>
+							<Link to={btn.path} key={indice}>
+								<BtnNav
+									clase={btn.clase}
+									texto={btn.texto}
+									/*
+										La función "modificarBotones" retorna una nueva matriz "newBotones"
+										y esta se asigna al hook de estado "boton" mediante la función "setBoton".
+										Esto provocará un renderizado de los componentes de los botones.
+									*/
+									onClick={() => setBoton(modificarBotones(indice))}
+								/>
+							</Link>
 						);
 					})
 				}

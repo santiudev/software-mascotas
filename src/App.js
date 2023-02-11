@@ -1,8 +1,11 @@
 import './App.css';
-import Nav from "./componentes/nav/nav.jsx"
 
 import Home from "./vistas/home.jsx"
-import Adoption from "./vistas/adopciones.jsx"
+import Perdidos from "./vistas/perdidos.jsx"
+import Encontrados from './vistas/encontrados';
+import Adoptar from "./vistas/adoptar.jsx"
+import Blog from './vistas/blog';
+import Contacto from './vistas/contacto';
 import NotFound from "./vistas/notFound.jsx"
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -11,12 +14,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Nav />
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<Home />}></Route>
-          <Route exact path='/adopciones' element={<Adoption />}></Route>
-          <Route element={<NotFound />}></Route>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/perdidos" element={<Perdidos />} />
+          <Route exact path="/encontrados" element={<Encontrados />} />
+          <Route exact path="/adoptar" element={<Adoptar />} />
+          <Route exact path="/blog" element={<Blog />} />
+          <Route exact path="/contacto" element={<Contacto />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
