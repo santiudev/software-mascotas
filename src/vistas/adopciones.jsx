@@ -4,6 +4,7 @@ import AdopcionesTarjetaContainer from '../contenedores/adopciones/adopcionesTar
 import BtnPrincipal from '../componentes/principales/btnPrincipal';
 import LetraTitulo from '../componentes/principales/LetraTitulo';
 
+//En el componente letraTitulo se le agrego la prop align para dinamizar el text-align del componente
 import styles from '../css/adopciones/adopciones.module.css'
 const adopciones = () => {
   return (

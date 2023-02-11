@@ -7,7 +7,7 @@ import NotFound from "./vistas/notFound.jsx"
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-//Routas de la app
+//Routas de la app. Vincular las rutas con el componente nav
 function App() {
   return (
     <div className="App">
