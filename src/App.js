@@ -1,9 +1,9 @@
 import './App.css';
 import Nav from "./componentes/nav/nav.jsx"
 
-import Home from "./contenedores/home.jsx"
-import Adoption from "./contenedores/adopciones.jsx"
-import NotFound from "./componentes/notFound/notFound.jsx"
+import Home from "./vistas/home.jsx"
+import Adoption from "./vistas/adopciones.jsx"
+import NotFound from "./vistas/notFound.jsx"
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 

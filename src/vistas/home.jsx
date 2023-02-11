@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TarjetaDestacada from '../componentes/tarjetaDestacada/tarjetaDestacada.jsx';
+import TarjetaDestacada from '../componentes/home/tarjetaDestacada.jsx';
 const home = () => {
   return (
     <>
