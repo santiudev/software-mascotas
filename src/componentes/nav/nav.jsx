@@ -34,7 +34,7 @@ const Nav = () => {
 		<nav className={styles.nav}>
 			<LetraTitulo
 				texto="Ho-Pet"
-				color="#DE341D"
+				clase="letra-titulo--red"
 			/>
 			<div className={styles["nav__contenedor-botones"]}>
 				{
@@ -63,7 +63,7 @@ const Nav = () => {
           alt="Login"
         />
         <BtnPrincipal
-					texto="Adoptar"
+					texto="Reportar"
 				/>
       </div>
     </nav>

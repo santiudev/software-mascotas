@@ -6,10 +6,10 @@ import BtnPrincipal from '../principales/btnPrincipal';
 const adopcionesTarjeta = ({ imagen, nombre, descripcion }) => {
   return (
     <article className={styles.tarjeta}>
-      <img src={imagen} alt="mascota en adopción" />
+      <img src={imagen} alt="Mascota en adopción" />
       <h3>{nombre}</h3>
       <p>{descripcion}</p>
-      <BtnPrincipal texto="Leer mas +"/>
+      <BtnPrincipal texto="Leer más"/>
     </article>
   )
 }

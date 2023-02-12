@@ -25,7 +25,6 @@ button > img {
 
 button > img:hover {
   transform: scale(1.3);
-  transition: all 200ms ease;
 }
 
 .arrow {

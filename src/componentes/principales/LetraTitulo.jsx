@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../../css/principales/letraTitulo.module.css";
 
-const LetraTitulo = ({ texto, color, align }) => {
+const LetraTitulo = ({ texto, align, clase }) => {
 	return(
-    <p className={styles["letra-titulo"]} style={{color: color, textAlign: align}}>{texto}</p>
+    <p className={`${styles[`letra-titulo`]} ${styles[clase]}`} style={{textAlign: align}}>{texto}</p>
 	);
 };
 

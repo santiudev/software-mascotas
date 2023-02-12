@@ -1,0 +1,22 @@
+.header{
+  background-image: url(../../iconos/imagenes\ recursos/img-home.jpg);
+  background-size: 1920px 1080px;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 8vh 92vh;
+}
+
+.header__section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  width: 50%;
+  margin-left: 1rem;
+}
+
+.header__buttons{
+  display: flex;
+  justify-content: space-evenly;
+}

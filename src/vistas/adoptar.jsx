@@ -12,10 +12,10 @@ const adopciones = () => {
     <>
       <Nav />
       <div className={styles.adopciones}>
-        <LetraTitulo texto="ADOPCIONES" color="#DE341D" align='center' />
+        <LetraTitulo texto="ADOPCIONES" clase="letra-titulo--red" align='center' />
         <AdopcionesTarjetaContainer />
         <div>
-          <BtnPrincipal texto="Ver mas +" />
+          <BtnPrincipal texto="Ver más" />
         </div>
       </div>
     </>

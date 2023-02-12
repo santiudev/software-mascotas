@@ -8,5 +8,27 @@
 	font-size: 3rem;
 	margin: 0;
 	padding-bottom: .8rem;
-	white-space: nowrap;
+	min-width: 11rem;
+	user-select: none;
+}
+
+.letra-titulo--red{
+	color: #DE341D;
+	text-shadow: -.8px -.8px 0 #fff, 
+               .8px -.8px 0 #fff, 
+               -.8px .8px 0 #fff, 
+               .8px .8px 0px #fff;
+	-webkit-text-stroke: .1px #fff;
+	-moz-text-stroke: .1px #fff;
+}
+
+.letra-titulo--white{
+	color: white;
+	text-shadow: -.8px -.8px 0 #000, 
+               .8px -.8px 0 #000, 
+               -.8px .8px 0 #000, 
+               .8px .8px 0 #000;
+	-webkit-text-stroke: .4px black;
+	-moz-text-stroke: .4px black;
+	font-size: 5rem;
 }
