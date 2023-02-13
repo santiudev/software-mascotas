@@ -5,7 +5,7 @@ import BtnPrincipal from '../componentes/principales/btnPrincipal';
 import LetraParrafo from "../componentes/principales/letraParrafo"
 import styles from "../css/home/home.module.css"
 
-import TarjetaDestacada from '../componentes/home/tarjetaDestacada.jsx';
+import TarjetaDestacadaContainer from '../contenedores/home/TarjetaDestacadaContainer';
 import Footer from '../componentes/Footer/Footer';
 const home = () => {
   return (
@@ -34,7 +34,7 @@ const home = () => {
           </div>
         </section>
       </header>
-      <TarjetaDestacada />
+      <TarjetaDestacadaContainer />
       <Footer />
     </>
   )
