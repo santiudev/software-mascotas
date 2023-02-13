@@ -6,6 +6,7 @@ import LetraParrafo from "../componentes/principales/letraParrafo"
 import styles from "../css/home/home.module.css"
 
 import TarjetaDestacada from '../componentes/home/tarjetaDestacada.jsx';
+import Footer from '../componentes/Footer/Footer';
 const home = () => {
   return (
     <>
@@ -34,6 +35,7 @@ const home = () => {
         </section>
       </header>
       <TarjetaDestacada />
+      <Footer />
     </>
   )
 }

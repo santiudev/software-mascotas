@@ -1,0 +1,16 @@
+.footer {
+	background-color: #d9dbde;
+	display: flex;
+	align-items: flex-start;
+	padding: 40px 30px 150px 30px;
+}
+
+.footer > section {
+	margin: 0 20px;
+	padding: 0;
+}
+
+section > * {
+	margin: 0;
+	padding: 0;
+}

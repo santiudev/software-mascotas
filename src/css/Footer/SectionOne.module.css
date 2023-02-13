@@ -1,0 +1,27 @@
+.sectionOne__footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.h3__sectionOne {
+	font-family: letra-titulo;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 32px;
+	letter-spacing: 0.05em;
+	color: #343a40;
+	margin-bottom: 20px;
+}
+
+.p__sectionOne {
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0.1em;
+	color: #343a40;
+	margin: 0;
+}

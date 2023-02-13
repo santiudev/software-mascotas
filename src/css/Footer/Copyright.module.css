@@ -1,0 +1,16 @@
+.copyright {
+	background-color: #343a40;
+}
+
+.copyright__p {
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+	color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+}
