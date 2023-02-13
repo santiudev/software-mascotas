@@ -1,0 +1,32 @@
+.perdidos__h2 {
+	font-family: letra-titulo;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 32px;
+	letter-spacing: 0.02em;
+	color: #de341d;
+	text-align: center;
+	padding: 0 30%;
+  margin: 70px 0;
+}
+
+.perdidos__p {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.02em;
+	color: #343a40;
+  text-align: center;
+  padding: 0 12%;
+  margin-bottom: 100px;
+}
+
+.perdidos__tarjeta_container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	gap: 100px 120px;
+}
