@@ -1,6 +1,8 @@
 .letra-parrafo{
   margin: 0;
   font-size: 1.5rem;
+  line-height: 1.4rem;
+	letter-spacing: 0.03rem;
 }
 
 .letra-parrafo--white{
@@ -9,4 +11,12 @@
                1px -1px 1.5px #000, 
                -1px 1px 1.5px #000, 
                1px 1px 1.5px #000;
+}
+
+.letra-parrafo--black{
+  font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bold;
+	color: #343a40;
+  text-align: center;
 }

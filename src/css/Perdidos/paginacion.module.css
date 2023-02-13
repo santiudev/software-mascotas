@@ -6,18 +6,17 @@
   width: 50px;
 }
 
-.paginacion__container {
+.paginacion {
   display: flex;
   justify-content: center;
 }
 
-.paginacion__subcontainer {
+.paginacion__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 150px 0;
-  width: 30%;
-  font-size: 24px;
+  padding: 2rem 0 4rem 0;
+  gap: 3rem;
+  font-size: 1.5rem;
 }
 
 .paginacion__a {

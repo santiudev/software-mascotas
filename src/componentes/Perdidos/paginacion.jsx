@@ -3,42 +3,32 @@ import styles from '../../css/Perdidos/paginacion.module.css';
 
 export default function Paginacion () {
   return (
-		<div className={styles.paginacion__container}>
-			<div className={styles.paginacion__subcontainer}>
+		<div className={styles.paginacion}>
+			<div className={styles.paginacion__container}>
 				<img
 					className={styles.paginacion__img}
 					src={icon}
-					alt={`${icon}-img`}
+					alt={`arrow-img`}
 				/>
 				<a className={styles.paginacion__a} href="/">
-					<span>
-						<u>1</u>
-					</span>
+					1
 				</a>
 				<a className={styles.paginacion__a} href="/">
-					<span>
-						<u>2</u>
-					</span>
+					2
 				</a>
 				<a className={styles.paginacion__a} href="/">
-					<span>
-						<u>3</u>
-					</span>
+					3
 				</a>
 				<a className={styles.paginacion__a} href="/">
-					<span>
-						<u>4</u>
-					</span>
+					4
 				</a>
 				<a className={styles.paginacion__a} href="/">
-					<span>
-						<u>5</u>
-					</span>
+					5
 				</a>
 				<img
 					className={styles.paginacion__img}
 					src={icon}
-					alt={`${icon}-img`}
+					alt={`arrow-img`}
 				/>
 			</div>
 		</div>

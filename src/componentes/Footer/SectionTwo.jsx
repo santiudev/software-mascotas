@@ -1,6 +1,6 @@
 import styles from '../../css/Footer/SectionTwo.module.css';
 
-export default function SectionTwo ({ title, enlaces = [] }) {
+export default function SectionTwo ({ title, enlaces }) {
   return (
 		<section className={styles.sectionTwo}>
 			<h3 className={styles.sectionTwo__h3}>{ title }</h3>
