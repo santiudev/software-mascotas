@@ -10,12 +10,13 @@ import useDataHoPet from '../../hooks/useDataHoPet'
 import styles from '../../css/home/tarjetaDestacadaContainer.module.css'
 
 const TarjetaDestacadaContainer = () => {
-  const Data = useDataHoPet()
+  const length = useDataHoPet().length
+  const Data = useDataHoPet().slice(length - 6, length)
   return (
     <section className={styles.tarjetaDestacadaContainer} style={styles}>
-      {Data.map(pet => (
-        <TarjetaDestacada key={pet.id} image={pet.imagen}/>
-      ))}
+      {Data.map((pet) => 
+      (<TarjetaDestacada key={pet.id} image={pet.imagen}/>)
+      )}
     </section>
   )
 }
