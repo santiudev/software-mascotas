@@ -1,3 +1,8 @@
+.perdidos__container {
+	background-image: url('../../iconos/imagen\ de\ fondo\ de\ huellas/bg-3.png');
+	background-position: center;
+}
+
 .texto-container{
 	margin: 0;
 	display: flex;

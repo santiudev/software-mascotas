@@ -24,7 +24,7 @@
   list-style-type: "> ";
 }
 
-.sectionTwo__li {
+.sectionTwo__li_enlace, .sectionTwo__li_contact {
 	font-family: 'Arial';
 	font-style: normal;
 	font-weight: 700;
@@ -32,4 +32,29 @@
 	line-height: 25px;
 	color: #343a40;
   margin-left: 20px;
+}
+
+.sectionTwo__li_enlace > a {
+	color: #000;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+.sectionTwo__li_enlace > a:hover {
+	text-decoration: underline;
+}
+
+.sectionTwo__li_contact {
+	list-style: none;
+	margin-left: 5px;
+}
+
+.sectionTwo__li_emails, .sectionTwo__li_tlf {
+	display: flex;
+	align-items: center;
+}
+
+.sectionTwo__li_icon {
+	width: 20px;
 }
