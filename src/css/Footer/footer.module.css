@@ -1,8 +1,10 @@
 .footer {
+	position: relative;
 	background-color: #d9dbde;
 	display: flex;
 	align-items: flex-start;
 	padding: 40px 30px 150px 30px;
+	box-shadow: 0px -10px 10px 0px #00000040;
 }
 
 .footer > section {
@@ -13,4 +15,10 @@
 section > * {
 	margin: 0;
 	padding: 0;
+}
+
+.footer__huellas {
+	position: absolute;
+	top: -40px;
+	width: 97%;
 }
