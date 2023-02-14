@@ -39,6 +39,12 @@
   border: 1px solid #000;
   border-radius: 0 10px 10px 0;
   font-size: 20px;
+	transition: .5s background-color;
+}
+
+.sectionThree__form > input:last-child:hover {
+	cursor: pointer;
+	background-color: #b21500;
 }
 
 .sectionThree__redes {
