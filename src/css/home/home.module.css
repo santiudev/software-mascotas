@@ -1,9 +1,11 @@
 .header{
+  height: 100vh;
   background-image: url(../../iconos/imagenes\ recursos/img-home.jpg);
-  background-size: 1920px 1080px;
+  background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
   display: grid;
-  grid-template-rows: 8vh 92vh;
+  grid-template-rows: 6rem 1fr;
 }
 
 .header__section{

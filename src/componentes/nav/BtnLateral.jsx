@@ -3,13 +3,11 @@ import styles from "../../css/nav/btnLateral.module.css";
 
 const BtnLateral = ({ src, alt }) => {
 	return(
-		<div className={styles["btn-lateral"]}>
 			<img 
 				src={src}
-				className={styles["btn-lateral__img"]}
+				className={styles["btn-lateral"]}
 				alt={alt}
 			/>
-		</div>
 	);
 };
 
