@@ -15,7 +15,15 @@ const TarjetaDestacadaContainer = () => {
   return (
     <section className={styles.tarjetaDestacadaContainer} style={styles}>
       {Data.map((pet) => 
-      (<TarjetaDestacada key={pet.id} image={pet.imagen}/>)
+      (<TarjetaDestacada 
+        key={pet.id} 
+        image={pet.imagen} 
+        length={pet.tamaño}
+        date={pet.fecha}
+        place={pet.lugar}
+        contact={pet.contacto}
+        description={pet.descripcion}
+        />)
       )}
     </section>
   )
