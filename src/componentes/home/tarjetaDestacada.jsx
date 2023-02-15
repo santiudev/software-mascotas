@@ -4,6 +4,7 @@ import React, { useState } from "react";
 // style import
 import styles from "../../css/home/tarjetaDestacada.module.css";
 
+// Modificar el tamaño de las imagenes
 import instagram from "../../iconos/instagram.png"
 import twitter from "../../iconos/twitter-sign.png"
 import facebook from "../../iconos/facebook.png"
@@ -11,11 +12,12 @@ import facebook from "../../iconos/facebook.png"
 // asset import
 import arrow from '../../iconos/arrow-down-sign-to-navigate.png'
 
+
 //tarjeta destacada recibe como prop la imagen de la mascota. Se require algún contenedor de tarjetas para eso
 const tarjetaDestacada = ({ image, length, date, place ,contact, description }) => {
   const [stateHover, setStateHover] = useState(false)
   const handleStateHover = () => {
-    setStateHover(!stateHover)
+    setStateHover(true)
   }
   return(
     <>
@@ -32,7 +34,7 @@ const tarjetaDestacada = ({ image, length, date, place ,contact, description }) 
               <li>Descripción: {description}</li>
             </ul>
             <address>
-    
+            
             </address>
           </section>
         )}
