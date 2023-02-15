@@ -1,8 +1,9 @@
 .tarjetaDestacadaContainer {
   height: 500px;
   margin-left: 10%;
+  display: flex;
   grid-template-columns: .5fr .5fr .8fr;
   display: grid;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }

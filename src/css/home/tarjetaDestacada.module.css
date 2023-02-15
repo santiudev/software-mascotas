@@ -9,7 +9,6 @@
   border-radius: 8px;
   z-index: 1;
   transition: all 100ms ease-in-out;
-  box-shadow: 5px 5px 20px #1C1C1C;
 }
 
 .card:hover {

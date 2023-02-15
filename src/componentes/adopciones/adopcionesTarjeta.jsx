@@ -9,7 +9,9 @@ const adopcionesTarjeta = ({ imagen, nombre, descripcion }) => {
       <img src={imagen} alt="Mascota en adopción" />
       <h3>{nombre}</h3>
       <p>{descripcion}</p>
-      <BtnPrincipal texto="Leer más"/>
+      <div>
+        <BtnPrincipal texto="Leer más"/>
+      </div>
     </article>
   )
 }

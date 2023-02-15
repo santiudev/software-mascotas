@@ -8,7 +8,17 @@
   grid-template-rows: 6rem 1fr;
 }
 
-.header__section{
+.header__subtitles {
+  text-align: center;
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+}
+
+.header__section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,3 +32,4 @@
   display: flex;
   justify-content: space-evenly;
 }
+
