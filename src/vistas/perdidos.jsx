@@ -48,7 +48,7 @@ const Perdidos = () => {
 						}
 					)}
 				</section>
-				<Paginacion />
+				<Paginacion enlaces={['', '', '', '', '']} />
 			</div>
 			<Footer />
 		</>
