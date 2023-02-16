@@ -36,7 +36,7 @@
 ## account 
 *account* is a django app for register and login of users
 
-### *account" endpoints
+### *account* endpoints
 >
 > api/accounts/register/  ["POST"]
 >
