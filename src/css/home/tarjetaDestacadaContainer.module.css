@@ -1,4 +1,5 @@
 .tarjetaDestacadaContainer {
+  margin-top: 2rem;
   height: 500px;
   margin-left: 10%;
   display: flex;
