@@ -10,21 +10,31 @@ from .models import User
 from .serializers import UserSerializerWithToken
 # Create your views here.
 
+## Funcion que sirve para hacer el login 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
+
+## Esta funcion valida al usuario 
     def validate(self,attrs):
         data = super().validate(attrs)
-        
+## Una vez tenemos la data validada
+## Pedidos que el serializer procese el usuario y nos devuelva el tolen
         serializers = UserSerializerWithToken(self.user).data
-        
+
+## Esta funcion es para que el serializer nos refresque el token y lo devuelva
         for token,user in serializers.items():
             data[token] = user
         
         return data
     
+## Aqui llamamos al la funcion anterior, para llamar a esta clase como una VIEW
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
     
 
+## Esta es la funcion para hacer register
+## Creamos un usuario y generamos su token por medio del serializer
+## Devolvemos el token automaticamente
+## asi que podemos hacer login automatico
 @api_view(["POST"])
 def register(request):
     data = request.data
