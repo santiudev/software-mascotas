@@ -34,7 +34,7 @@ export default function Footer() {
 						emails: ['lorem@lorem.com', 'lorem@lorem.com'],
 					}}
 				/>
-				<SectionThree title="Suscríbete al boletin" />
+				<SectionThree />
 			</footer>
 			<Copyright year={2023} />
 		</>
