@@ -1,0 +1,28 @@
+.adoptarTarjeta {
+  width: 40%;
+  display: flex;
+  border: 1px solid #00000080;
+  border-radius: 125px 10px 10px 125px;
+}
+
+.adoptarTarjeta__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% 0 0 50%;
+  background-color: #D9D9D9;
+}
+
+.adoptarTarjeta__img > img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.adoptarTarjeta__description {
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: #D9D9D9;
+  border-radius: 0 10px 10px 0;
+}
