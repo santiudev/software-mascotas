@@ -35,14 +35,15 @@ const home = () => {
           </div>
         </section>
       </header>
-      <LetraTitulo texto="PUBLICACION DESTACADA" clase={"letra-titulo--red"} align='center' />
-      <h3 className={styles.header__subtitles}>Cuando reporta una mascota perdida/encontrada, su publicación aparecerá aquí como publicación destacada.</h3>
-      <TarjetaDestacadaContainer />
-      <div className={styles.header__buttons}>
-        <BtnPrincipal texto="Encontrados +"/>
-        <BtnPrincipal texto="Perdidos +"/>
-        <BtnPrincipal texto="Ver más +"/>
+      <section className={styles["publicacion-destacada"]}>
+        <LetraTitulo texto="PUBLICACION DESTACADA" clase={"letra-titulo--red"} />
+        <h3>Cuando reporta una mascota perdida/encontrada, su publicación aparecerá aquí como publicación destacada.</h3>
+        <TarjetaDestacadaContainer />
+        <div className={styles["publicacion-destacada__buttons"]}>
+          <BtnPrincipal texto="Encontrados"/>
+          <BtnPrincipal texto="Perdidos"/>
       </div>
+      </section>
       <div className={styles.adopciones}>
         <LetraTitulo texto="ADOPCIONES" clase="letra-titulo--red" align='center' />
         <AdopcionesTarjetaContainer />

@@ -1,9 +1,19 @@
 .tarjetaDestacadaContainer {
-  height: 500px;
-  margin-left: 10%;
-  display: flex;
-  grid-template-columns: .5fr .5fr .8fr;
+  margin: 0;
   display: grid;
-  flex-direction: column;
-  justify-content: space-between;
+  place-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .tarjetaDestacadaContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Cambia a 2 columnas para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .tarjetaDestacadaContainer {
+    grid-template-columns: minmax(0, 1fr); /* Cambia a 1 columna para pantallas aún más pequeñas */
+  }
 }

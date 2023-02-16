@@ -27,11 +27,11 @@ const tarjetaDestacada = ({ image, length, date, place ,contact, description }) 
           <section className={styles.cardExtended}>
             <h3>Se perdió</h3>
             <ul>
-              <li>Tamaño: {length}</li>
-              <li>Zona: {place}</li>
-              <li>Fecha: {date}</li>
-              <li>Contacto: {contact}</li>
-              <li>Descripción: {description}</li>
+              <li><b>Tamaño:</b> {length}</li>
+              <li><b>Zona:</b> {place}</li>
+              <li><b>Fecha:</b> {date}</li>
+              <li><b>Contacto:</b> {contact}</li>
+              <li><b>Descripción:</b> {description}</li>
             </ul>
             <address>
             
