@@ -1,8 +1,8 @@
 section {
   width: 100%;
   display: grid;
+  margin: 0 5%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-evenly;
   overflow: hidden;
-  margin: 4%;
 }

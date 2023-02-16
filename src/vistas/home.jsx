@@ -7,6 +7,9 @@ import styles from "../css/home/home.module.css"
 
 import AdopcionesTarjetaContainer from '../contenedores/adopciones/adopcionesTarjetaContainer'
 import TarjetaDestacadaContainer from '../contenedores/home/TarjetaDestacadaContainer';
+import BlogContainer from '../contenedores/home/BlogContainer';
+
+
 import Footer from '../componentes/Footer/Footer';
 const home = () => {
   return (
@@ -51,6 +54,12 @@ const home = () => {
           <BtnPrincipal texto="Ver más" />
         </div>
       </div>
+      <LetraTitulo
+            texto="BLOG"
+            clase="letra-titulo--red"
+            align='center'
+          />
+      <BlogContainer />
       <Footer />
     </>
   )

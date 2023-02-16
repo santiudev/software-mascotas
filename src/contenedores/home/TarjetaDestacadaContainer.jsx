@@ -13,7 +13,7 @@ const TarjetaDestacadaContainer = () => {
   const length = useDataHoPet().length
   const Data = useDataHoPet().slice(length - 6, length)
   return (
-    <section className={styles.tarjetaDestacadaContainer} style={styles}>
+    <section className={styles.tarjetaDestacadaContainer}>
       {Data.map((pet) => 
       (<TarjetaDestacada 
         key={pet.id} 

@@ -28,6 +28,15 @@
   justify-content: space-evenly;
 }
 
+.adopciones {
+  margin-top: 2rem;
+  padding: 1%;
+}
+
+.adopciones > div {
+  margin: 0 43%;
+  margin-bottom: 2rem;
+}
 .publicacion-destacada{
   text-align: center;
   margin: 1.6rem 0;
