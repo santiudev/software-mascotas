@@ -23,6 +23,10 @@
 }
 
 .cardExtended {
+  display: none;
+}
+
+.card:hover > .cardExtended{
   display: block;
 }
 
@@ -32,7 +36,6 @@
   background-color: #de523f;
   border-radius: 8px;
   color: #FAFAFA;
-  margin-bottom: 1rem;
 }
 
 .cardExtended > ul {

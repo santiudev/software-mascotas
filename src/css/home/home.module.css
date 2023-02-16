@@ -8,14 +8,9 @@
   grid-template-rows: 6rem 1fr;
 }
 
-.header__subtitles {
-  text-align: center;
-}
-
 .header__buttons {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 5rem;
+  justify-content: space-evenly
 }
 
 .header__section {
@@ -41,4 +36,25 @@
 .adopciones > div {
   margin: 0 43%;
   margin-bottom: 2rem;
+}
+.publicacion-destacada{
+  text-align: center;
+  margin: 1.6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.publicacion-destacada__buttons{
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.publicacion-destacada__buttons > button{
+  padding: 1rem;
 }
