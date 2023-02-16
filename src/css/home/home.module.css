@@ -58,3 +58,18 @@
 .publicacion-destacada__buttons > button{
   padding: 1rem;
 }
+
+.sobre-nosotros{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 5rem 0;
+}
+
+.sobre-nosotros__container{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+  flex-wrap: wrap;
+}

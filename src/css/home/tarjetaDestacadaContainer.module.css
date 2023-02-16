@@ -1,4 +1,5 @@
 .tarjetaDestacadaContainer {
+  width: 100%;
   display: grid;
   place-items: center;
   gap: 1rem;

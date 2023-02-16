@@ -5,12 +5,11 @@
   height: 200px;
   box-shadow: 5px 5px 10px #1C1C1C;
   padding: 2%;
-  transition: all 400ms ease;
+  transition: all 100ms ease;
 }
 
 .blog:hover { 
-  transform: scale(1.2);
-  transition: all 400ms ease;
+  transform: scale(1.1);
 }
 
 .blog > a {

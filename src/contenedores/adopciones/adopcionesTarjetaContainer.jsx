@@ -10,7 +10,7 @@ const adopcionesTarjetaContainer = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const dataHoPet = useDataHoPet().slice(0, 4)
   return (
-    <section styles={styles}>
+    <section className={styles.adopciones}>
       {dataHoPet.map(pet => (
         <AdopcionesTarjeta
           key={pet.id} 

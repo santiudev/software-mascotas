@@ -1,8 +1,4 @@
-section {
-  width: 100%;
+.adopciones {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-evenly;
-  overflow: hidden;
-  margin: 4%;
+  grid-template-columns: repeat(4, 1fr);
 }

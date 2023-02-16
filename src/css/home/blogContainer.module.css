@@ -1,9 +1,5 @@
 .blogContainer {
   display: flex;
-  margin: 0;
-  margin-bottom: 2rem;
-  height: fit-content;
-  padding: 2%;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  justify-content: space-evenly;
+  padding: 2% 0;
 }
