@@ -11,6 +11,9 @@ import BlogContainer from '../contenedores/home/BlogContainer';
 
 
 import Footer from '../componentes/Footer/Footer';
+import SobreNosotros from '../componentes/home/sobreNosotros';
+import imgSobreNosotros from "../iconos/imagenes recursos/img-sobreNosotros.png"
+
 const home = () => {
   return (
     <>
@@ -60,6 +63,46 @@ const home = () => {
             align='center'
           />
       <BlogContainer />
+      <section className={styles["sobre-nosotros"]}>
+        <LetraTitulo
+          texto="Sobre Nosotros"
+          clase="letra-titulo--red"
+        />
+        <article className={styles["sobre-nosotros__container"]}>
+          <SobreNosotros 
+            img={imgSobreNosotros}
+            titulo="Lorem"
+            texto="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Enim sit qui, repudiandae aperiam laborum a quisquam in fugiat
+            corrupti tenetur reprehenderit, harum, tempora pariatur expedita 
+            excepturi saepe fugit eius nulla."
+          />
+          <SobreNosotros 
+            img={imgSobreNosotros}
+            titulo="Lorem"
+            texto="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Enim sit qui, repudiandae aperiam laborum a quisquam in fugiat
+            corrupti tenetur reprehenderit, harum, tempora pariatur expedita 
+            excepturi saepe fugit eius nulla."
+          />
+          <SobreNosotros 
+            img={imgSobreNosotros}
+            titulo="Lorem"
+            texto="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Enim sit qui, repudiandae aperiam laborum a quisquam in fugiat
+            corrupti tenetur reprehenderit, harum, tempora pariatur expedita 
+            excepturi saepe fugit eius nulla."
+          />
+          <SobreNosotros 
+            img={imgSobreNosotros}
+            titulo="Lorem"
+            texto="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Enim sit qui, repudiandae aperiam laborum a quisquam in fugiat
+            corrupti tenetur reprehenderit, harum, tempora pariatur expedita 
+            excepturi saepe fugit eius nulla."
+          />
+        </article>
+      </section>
       <Footer />
     </>
   )
