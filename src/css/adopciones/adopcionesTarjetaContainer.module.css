@@ -1,8 +1,4 @@
-section {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-evenly;
-  overflow: hidden;
-  margin: 4%;
+.adopcionesTarjeta__container {
+  display: flex;
+  flex-wrap: wrap;
 }
