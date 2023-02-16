@@ -1,7 +1,7 @@
 import icon from '../../iconos/arrow-down-sign-to-navigate.png';
 import styles from '../../css/Perdidos/paginacion.module.css';
 
-export default function Paginacion () {
+export default function Paginacion ({ enlaces=[] }) {
   return (
 		<div className={styles.paginacion}>
 			<div className={styles.paginacion__container}>
@@ -10,21 +10,15 @@ export default function Paginacion () {
 					src={icon}
 					alt={`arrow-img`}
 				/>
-				<a className={styles.paginacion__a} href="/">
-					1
-				</a>
-				<a className={styles.paginacion__a} href="/">
-					2
-				</a>
-				<a className={styles.paginacion__a} href="/">
-					3
-				</a>
-				<a className={styles.paginacion__a} href="/">
-					4
-				</a>
-				<a className={styles.paginacion__a} href="/">
-					5
-				</a>
+				{
+					enlaces.map((value, index) => {
+						return (
+							<a key={index} className={styles.paginacion__a} href={`/${value}`}>
+								{index + 1}
+							</a>
+						);
+					})
+				}
 				<img
 					className={styles.paginacion__img}
 					src={icon}
