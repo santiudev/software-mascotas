@@ -2,7 +2,7 @@ import SubData from "./subData";
 import shareIcon from '../../iconos/share-icon.png';
 import styles from '../../css/Perdidos/perdidosTarjeta.module.css';
 
-export default function PerdidosTarjeta({ url_img, nombre, tam, zona, fecha, contacto, desc }) {
+export default function PerdidosTarjeta({ url_img, nombre, tam, zona, fecha, contacto, desc, encontrado }) {
   return (
 		<div className={styles.perdidosTarjeta}>
 			<img
@@ -10,7 +10,7 @@ export default function PerdidosTarjeta({ url_img, nombre, tam, zona, fecha, con
 				src={url_img}
 				alt={`${nombre}-img`}
 			/>
-			<h3 className={styles.perdidosTarjeta__h3}>Se perdió {nombre}</h3>
+			<h3 className={styles.perdidosTarjeta__h3}>{ encontrado ? 'Encontrado' : `Se perdió ${nombre}` }</h3>
 			<div className={styles.perdidosTarjeta__subdata_container}>
         <SubData className={styles.perdidosTarjeta__subdata} subtitle="Tamaño" data={tam} />
         <SubData className={styles.perdidosTarjeta__subdata} subtitle="Zona" data={zona} />
