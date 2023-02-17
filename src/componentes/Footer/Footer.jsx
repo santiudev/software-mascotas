@@ -10,30 +10,31 @@ export default function Footer() {
 	return (
 		<>
 			<footer className={styles.footer}>
-				<img className={styles.footer__huellas} src={huellas} alt='huellas' />
+				<img className={styles.footer__huellas} src={huellas} alt="huellas" />
 				<SectionOne
 					title="HO-PET"
 					parrafo="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry"
 				/>
-				<SectionTwo
-					title="Enlaces"
-					enlaces={[
-						'Blog',
-						'FAQ',
-						'Nosotros',
-						'Contacto',
-						'Únete',
-						'Política de privacidad',
-					]}
-				/>
-				<SectionTwo
-					title="Contacto"
-					// contact={['+1 909 7640024', 'lorem@lorem.com', 'lorem@lorem.com']}
-					contact={{
-						tlf: ['+1 909 7640024'],
-						emails: ['lorem@lorem.com', 'lorem@lorem.com'],
-					}}
-				/>
+				<div className={styles.sectionTwo__container}>
+					<SectionTwo
+						title="Enlaces"
+						enlaces={[
+							'Blog',
+							'FAQ',
+							'Nosotros',
+							'Contacto',
+							'Únete',
+							'Política de privacidad',
+						]}
+					/>
+					<SectionTwo
+						title="Contacto"
+						contact={{
+							tlf: ['+1 909 7640024'],
+							emails: ['lorem@lorem.com', 'lorem@lorem.com'],
+						}}
+					/>
+				</div>
 				<SectionThree />
 			</footer>
 			<Copyright year={2023} />
