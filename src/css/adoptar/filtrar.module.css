@@ -1,0 +1,36 @@
+.filtrar {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+}
+
+.filtrar__input {
+	height: 30px;
+	background-color: #D9D9D9;
+	outline: none;
+	border: 1px solid #000;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 23px;
+	letter-spacing: 0.02em;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.filtrar__btn {
+	height: 35px;
+	color: #fff;
+	background: #de341d;
+	border: 1px solid #de341d;
+	outline: none;
+	border-radius: 0 0 5px 5px;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 10px;
+	letter-spacing: 0.08em;
+	text-align: center;
+}
