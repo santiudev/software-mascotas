@@ -21,36 +21,38 @@ const adoptar = () => {
 	return (
 		<>
 			<Nav />
-			<section className={styles_perdidos['texto-container']}>
-				<article className={styles_perdidos['texto-container__titulo']}>
-					<LetraTitulo
-						texto="Mascotas en adopcion - Encuentra a tu nuevo mejor amigo"
-						clase="letra-titulo--red"
-					/>
-				</article>
-				<article className={styles_perdidos['texto-container__subtitulo']}>
-					<LetraParrafo
-						texto="“Encuentra a tu compañero fiel en nuestra lista de mascotas en adopción. Tenemos variedad de mascotas en busca de un hogar amoroso. Adoptar es una gran responsabilidad pero también una gran recompensa. ¡Haz feliz a una mascota adoptando hoy!”"
-						clase="letra-parrafo--black"
-					/>
-				</article>
-				<article className={styles.filter__container}>
-					<Filtrar />
-				</article>
-				<article className={styles.adoptarTarjeta__container}>
-					{Data.map((value) => {
-						return (
-							<AdoptarTarjeta
-								key={value.id}
-								img={value.imagen}
-								descripcion={value.descripcion}
-								contacto={value.contacto}
-							/>
-						);
-					})}
-				</article>
-				<Paginacion enlaces={['', '', '', '', '']} />
-			</section>
+			<div className={styles.adoptar__container}>
+				<section className={styles_perdidos['texto-container']}>
+					<article className={styles_perdidos['texto-container__titulo']}>
+						<LetraTitulo
+							texto="Mascotas en adopcion - Encuentra a tu nuevo mejor amigo"
+							clase="letra-titulo--red"
+						/>
+					</article>
+					<article className={styles_perdidos['texto-container__subtitulo']}>
+						<LetraParrafo
+							texto="“Encuentra a tu compañero fiel en nuestra lista de mascotas en adopción. Tenemos variedad de mascotas en busca de un hogar amoroso. Adoptar es una gran responsabilidad pero también una gran recompensa. ¡Haz feliz a una mascota adoptando hoy!”"
+							clase="letra-parrafo--black"
+						/>
+					</article>
+					<article className={styles.filter__container}>
+						<Filtrar />
+					</article>
+					<article className={styles.adoptarTarjeta__container}>
+						{Data.map((value) => {
+							return (
+								<AdoptarTarjeta
+									key={value.id}
+									img={value.imagen}
+									descripcion={value.descripcion}
+									contacto={value.contacto}
+								/>
+							);
+						})}
+					</article>
+					<Paginacion enlaces={['', '', '', '', '']} />
+				</section>
+			</div>
 			<Footer />
 		</>
 	);
