@@ -35,7 +35,14 @@ const adoptar = () => {
 					/>
 				</article>
 				<article className={styles.filter__container}>
+					
 					<Filtrar />
+					<Filtrar />
+					<Filtrar />
+					<Filtrar />
+					<Filtrar />
+
+
 				</article>
 				<article className={styles.adoptarTarjeta__container}>
 					{Data.map((value) => {

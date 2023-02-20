@@ -2,10 +2,15 @@
 	background-color: white;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
 	user-select: none;
 	box-shadow: 0 4px 2rem;
 	height: 6rem;
+	width: 100%;
+    margin: 0 auto;
+	/* 	
+	width: 100%;
+	z-index: 10; */
 }
 
 .nav__contenedor-botones{

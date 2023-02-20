@@ -40,7 +40,7 @@ const Encontrados = () => {
 									nombre={id}
 									tam={tamaño}
 									zona={lugar}
-                  encontrado={true}
+                    encontrado={true}
 								/>
 							);
 						}

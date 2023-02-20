@@ -16,8 +16,9 @@
 }
 
 .filter__container {
-  width: 80%;
-  display: flex;
-  justify-content: start;
-  margin: 10px 0;
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    margin: 10px 0;
 }
+

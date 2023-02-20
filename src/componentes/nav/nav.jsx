@@ -33,7 +33,7 @@ const Nav = () => {
 	return(
 		<nav className={styles.nav}>
 			<LetraTitulo
-				texto="Ho-Pet"
+				texto="Patitas a Casa" 
 				clase="letra-titulo--red"
 			/>
 			<div className={styles["nav__contenedor-botones"]}>

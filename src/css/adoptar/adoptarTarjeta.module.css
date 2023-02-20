@@ -3,17 +3,19 @@
   display: flex;
   border: 1px solid #00000080;
   border-radius: 125px 10px 10px 125px;
+
 }
 
 .adoptarTarjeta__img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 21px red;
   border-radius: 50% 0 0 50%;
-  background-color: #D9D9D9;
+  background-color: #9c1c1c21;
 }
 
-.adoptarTarjeta__img > img {
+.adoptarTarjeta__img>img {
   width: 220px;
   height: 220px;
   object-fit: cover;
@@ -23,6 +25,10 @@
 .adoptarTarjeta__description {
   padding-left: 20px;
   padding-right: 10px;
-  background-color: #D9D9D9;
+  background-color: #9c1c1c21;
+  background-image: url("../../iconos/paw.png");
+  background-size: 50px;
+  background-position-x: 95%;
+  background-repeat: no-repeat;
   border-radius: 0 10px 10px 0;
 }

@@ -1,12 +1,13 @@
 .filtrar {
-	width: 250px;
 	display: flex;
+	width: 250px;
 	flex-direction: column;
+	margin: 2%;
 }
 
 .filtrar__input {
 	height: 30px;
-	background-color: #D9D9D9;
+	background-color: #d3cdcd;
 	outline: none;
 	border: 1px solid #000;
 	border-bottom: none;
