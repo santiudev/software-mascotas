@@ -1,0 +1,117 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: fixed;
+  padding: 1%;
+  top: 15%;
+  left: 30%;
+  width: 400px;
+  height: fit-content;
+  background-color: rgba(243, 188, 136, 0.9);
+  border-radius: 8px;
+}
+
+
+.form_inputs {
+  display: flex;
+  margin: 2% 5%;
+}
+
+.form_inputs input {
+  border-style: none;
+  border-radius: 2px;
+  margin: 4% 0%;
+  width: 10em;
+  background-color: transparent;
+  border-bottom: solid;
+  border-width: 0.1rem;
+  border-color: #8b6044;
+  color: #8b6044;
+  font-weight: bold;
+}
+
+.form_inputs input::placeholder {
+  font-weight: bold;
+  color: #8b6044;
+}
+
+.form textarea {
+  background-color: transparent;
+  border-style: solid;
+  margin: 4%;
+  border-width: 0.1rem;
+  border-color: #8b6044;
+  border-radius: 8px;
+  color: #8b6044;
+  font-weight: bold;
+}
+
+.form button {
+  border-style: none;
+  background-color: #DE341D;
+  color: #FAFAFA;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 4%;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.form > button:hover {
+  background-color: rgba(222, 52, 29, 0.7);
+  transition: all 200ms ease;
+}
+
+.buttonFile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-style: none;
+  background-color: rgba(222, 52, 29, 0.8);
+  color: #FAFAFA;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 1%;
+  transition: all 200ms ease;
+}
+
+.form img {
+  width: 20%;
+  height: 20%;
+}
+
+.headerForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerForm button {
+  color: #1C1C1C;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.form button.cancelButton {
+  padding: 1%;
+  width: fit-content;
+  transition: all 200ms ease;
+}
+
+.cancelButton:hover {
+  background-color: rgba(222, 52, 29, 0.5);
+  transition: all 200ms ease;
+}
+
+.pet {
+  cursor: pointer;
+  transition: all 200ms ease;
+  margin: 4%;
+  font-weight: bold;
+}
+
+.pet:hover {
+  transform: scale(1.2);
+  transition: all 200ms ease;
+}

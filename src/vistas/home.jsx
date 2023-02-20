@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { useState } from 'react';
 import Nav from "../componentes/nav/nav";
 import LetraTitulo from '../componentes/principales/LetraTitulo';
 import BtnPrincipal from '../componentes/principales/btnPrincipal';
@@ -9,12 +10,16 @@ import AdopcionesTarjetaContainer from '../contenedores/adopciones/adopcionesTar
 import TarjetaDestacadaContainer from '../contenedores/home/TarjetaDestacadaContainer';
 import BlogContainer from '../contenedores/home/BlogContainer';
 
+import Formulario from '../componentes/Formulario/formulario'
 
 import Footer from '../componentes/Footer/Footer';
 import SobreNosotros from '../componentes/home/sobreNosotros';
 import imgSobreNosotros from "../iconos/imagenes recursos/img-sobreNosotros.png"
 
 const home = () => {
+
+  const [modal, setModal] = useState(false)
+
   return (
     <>
       <header className={styles.header}>
@@ -34,6 +39,7 @@ const home = () => {
           <div className={styles.header__buttons}>
             <BtnPrincipal
               texto="Reportar"
+              setModal={setModal}
             />
             <BtnPrincipal
               texto="Adoptar"
@@ -104,6 +110,8 @@ const home = () => {
         </article>
       </section>
       <Footer />
+
+      { modal && <Formulario setModal={setModal} />}
     </>
   )
 }
