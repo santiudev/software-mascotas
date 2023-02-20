@@ -14,6 +14,7 @@ const Card = ({ s1Text, s1bg, s2Text, s2Img, s3Text }) => {
         title,
         description
       }} img={s2Img} />
+			<SectionThree text={s3Text} />
 		</div>
 	);
 };

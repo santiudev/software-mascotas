@@ -4,8 +4,10 @@ import SectionThreeMini from './sectionThreeMini';
 const SectionThree = ({ text }) => {
 	return (
 		<div className={styles.sectionThree__container}>
-      <SectionThreeMini />
-    </div>
+			<SectionThreeMini text={text} />
+			<SectionThreeMini text={text} />
+			<SectionThreeMini text={text} />
+		</div>
 	);
 };
 

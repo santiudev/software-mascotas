@@ -1,4 +1,6 @@
 .sectionThree__container {
+  width: 30%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px 0;
 }

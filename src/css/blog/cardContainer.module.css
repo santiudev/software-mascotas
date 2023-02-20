@@ -1,11 +1,11 @@
 .cardContainer {
   width: 90%;
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
+  justify-content: space-between;
   padding: 20px;
   background-color: #D9D9D9;
   border-radius: 10px;
   border: 1px solid #00000080;
   box-shadow: 0px 4px 10px 0px #00000080;
+  margin: 30px 0;
 }
