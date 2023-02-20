@@ -1,0 +1,35 @@
+.sectionTwo__container {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #f4f4f4;
+	border: 1px solid #00000080;
+	border-radius: 15px;
+}
+
+.sectionTwo__img {
+	width: 90%;
+	height: 350px;
+	object-fit: cover;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+
+.sectionTwo__text {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
+}
+
+.sectionTwo__p,
+.sectionTwo__h2 {
+	font-family: 'Arial';
+	font-style: normal;
+	font-size: 15px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.02em;
+}

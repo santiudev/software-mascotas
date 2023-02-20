@@ -1,3 +1,7 @@
+.adoptar__container {
+	background-image: url('../../iconos/imagen\ de\ fondo\ de\ huellas/bg-3.png');
+}
+
 .adoptarTarjeta__container {
 	position: relative;
 	display: flex;
