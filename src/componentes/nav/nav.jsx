@@ -1,5 +1,5 @@
 // React
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 
 // Estilos
@@ -10,6 +10,7 @@ import LetraTitulo from "../principales/LetraTitulo";
 import BtnNav from "./btnNav";
 import BtnLateral from "./BtnLateral"
 import BtnPrincipal from "../principales/btnPrincipal";
+import Formulario from '../Formulario/formulario';
 
 // Imágenes
 import imgSearch from "../../iconos/search.png";
@@ -30,6 +31,9 @@ const botones = [
 ];
 
 const Nav = () => {
+
+	const [modal, setModal] = useState(false)
+
 	return(
 		<nav className={styles.nav}>
 			<LetraTitulo
@@ -64,8 +68,12 @@ const Nav = () => {
         />
         <BtnPrincipal
 					texto="Reportar"
+					setModal={setModal}
 				/>
       </div>
+			{
+				modal && (<Formulario setModal={setModal}/>)
+			}
     </nav>
 	);
 }
