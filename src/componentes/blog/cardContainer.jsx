@@ -1,20 +1,17 @@
 import styles from '../../css/blog/cardContainer.module.css';
-import SectionOne from './sectionOne';
-import SectionTwo from './sectionTwo';
-import SectionThree from './sectionThree';
 
-const Card = ({ s1Text, s1bg, s2Text, s2Img, s3Text }) => {
-
-  const { title, description } = s2Text;
-
+const Card = ({ img, consejo, titulo, descripcion, fecha }) => {
 	return (
 		<div className={styles.cardContainer}>
-			<SectionOne text={s1Text} bg={s1bg} />
-			<SectionTwo text={{
-        title,
-        description
-      }} img={s2Img} />
-			<SectionThree text={s3Text} />
+			<img src={img} alt={`${img}_img`} />
+			<div className={styles.cardContainer__content}>
+				<span className={styles.cardContainer__consejo}>{consejo}</span>
+				<div className={styles.cardContainer__data}>
+					<h2 className={styles.cardContainer__titulo}>{titulo}</h2>
+					<p className={styles.cardContainer__descripcion}>{descripcion}</p>
+				</div>
+				<span className={styles.cardContainer__fecha}>{fecha}</span>
+			</div>
 		</div>
 	);
 };

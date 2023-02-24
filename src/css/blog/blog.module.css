@@ -5,3 +5,11 @@
   align-items: center;
   padding: 40px;
 }
+
+.blog__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 30px;
+  gap: 40px 0;
+}
