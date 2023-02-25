@@ -25,5 +25,7 @@ section > * {
 }
 
 .sectionTwo__container {
+	width: 30%;
 	display: flex;
+	justify-content: space-between;
 }
