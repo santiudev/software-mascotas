@@ -6,6 +6,7 @@ import Encontrados from './vistas/encontrados';
 import Adoptar from "./vistas/adoptar.jsx"
 import Blog from './vistas/blog';
 import Contacto from './vistas/contacto';
+import Refugios from "./vistas/refugios"
 import NotFound from "./vistas/notFound.jsx"
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/adoptar" element={<Adoptar />} />
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/contacto" element={<Contacto />} />
+          <Route exact path="/refugios" element={<Refugios />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

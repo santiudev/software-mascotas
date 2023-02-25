@@ -27,7 +27,8 @@ const botones = [
 	{texto: "Encontrados", path: "/encontrados"},
 	{texto: "Adoptar", path: "/adoptar"},
 	{texto: "Blog", path: "/blog"},
-	{texto: "Contacto", path: "/contacto"}
+	{texto: "Contacto", path: "/contacto"},
+	{texto: "Refugios", path: "/refugios"}
 ];
 
 const Nav = () => {
@@ -37,7 +38,7 @@ const Nav = () => {
 	return(
 		<nav className={styles.nav}>
 			<LetraTitulo
-				texto="Patitas a Casa" 
+				texto="Ho-Pet" 
 				clase="letra-titulo--red"
 			/>
 			<div className={styles["nav__contenedor-botones"]}>

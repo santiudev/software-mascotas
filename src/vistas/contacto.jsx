@@ -24,8 +24,8 @@ const Contacto = () => {
           <div className={styles.contacto__inputs}>
             <input type="text" placeholder="Nombre (*)" className={styles.contacto__input}/>
             <input type="text" placeholder="Apellido (*)" className={styles.contacto__input} />
-            <input type="text" placeholder="Email (*)" className={styles.contacto__input} />
-            <input type="text" placeholder="Teléfono (*)" className={styles.contacto__input} />
+            <input type="email" placeholder="Email (*)" className={styles.contacto__input} />
+            <input type="number" placeholder="Teléfono (*)" className={styles.contacto__input} />
             <textarea type="text" placeholder="Mensaje (*)" className={styles.contacto__textarea} maxLength="300" />
           </div>
           <p className={styles.contacto__parrafo}>Hasta 300 caracteres</p>
