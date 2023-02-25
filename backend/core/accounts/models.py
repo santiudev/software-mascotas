@@ -1,15 +1,15 @@
 from django.db import models
-from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from phonenumber_field.modelfields import PhoneNumberField
-from accounts.custom import UserManager
+
+from accounts.manager import MyUserManager
 
 AUTH_PROVIDERS = {'facebook': 'facebook', 'google': 'google',
                   'twitter': 'twitter', 'email': 'email'}
 
 
-class User(AbstractBaseUser):
+class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(_('email address'), unique=True)
     username = models.CharField(max_length=30)
     age = models.CharField(max_length=30)
@@ -24,7 +24,8 @@ class User(AbstractBaseUser):
     updated_at = models.DateTimeField(auto_now=True)
     auth_provider = models.CharField(max_length=255, blank=False, null=False, default=AUTH_PROVIDERS.get('email'))
     
-    objects = UserManager()
+    objects = MyUserManager()
+
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
 
