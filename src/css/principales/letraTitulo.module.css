@@ -4,6 +4,7 @@
 }
 
 .letra-titulo {
+	text-align: center;
 	font-family: letra-titulo;
 	font-size: 2.25rem;
 	margin: 0;
