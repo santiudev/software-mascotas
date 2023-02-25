@@ -8,8 +8,8 @@ import huellas from '../../iconos/imagen de fondo de huellas/bg-footer.png';
 
 export default function Footer() {
 	return (
-		<>
-			<footer className={styles.footer}>
+		<footer>
+			<div className={styles.footer__container}>
 				<img className={styles.footer__huellas} src={huellas} alt="huellas" />
 				<SectionOne
 					title="HO-PET"
@@ -36,8 +36,8 @@ export default function Footer() {
 					/>
 				</div>
 				<SectionThree />
-			</footer>
+			</div>
 			<Copyright year={2023} />
-		</>
+		</footer>
 	);
 }

@@ -12,7 +12,7 @@ const Perdidos = () => {
 	return (
 		<>
 			<Nav />
-			<div className={styles.perdidos__container}>
+			<div className={styles.perdidos}>
 				<section className={styles['texto-container']}>
 					<article className={styles['texto-container__titulo']}>
 						<LetraTitulo
