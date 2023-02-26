@@ -3,11 +3,12 @@ import React from 'react'
 
 import styles from '../../css/home/blog.module.css'
 
-const blog = ({ parrafo }) => {
+const blog = ({ title, content, img }) => {
   return(
     <article className={styles.blog}>
-      <img src="" alt="blog image" />
-      <p>{parrafo}</p>
+      <img src={img} alt="blog image" />
+      <h2>{title}</h2>
+      <p>{content}</p>
       <a>Leer mas +</a>
     </article>
     
