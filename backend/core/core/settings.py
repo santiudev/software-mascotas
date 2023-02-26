@@ -17,7 +17,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-AUTH_USER_MODEL = 'accounts.User'
 
 
 # Application definition
@@ -34,7 +33,6 @@ INSTALLED_APPS = [
     'api_img',
     'accounts',
     'blog',
-    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
