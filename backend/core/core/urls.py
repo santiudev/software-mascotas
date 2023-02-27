@@ -21,4 +21,5 @@ urlpatterns = [
     path('api/hti/', include('api_img.urls')),
     path('api/accounts/', include('accounts.urls')),
     path('blog/', include('blog.urls')),
+    path('petForm/', include('petsForms.urls'))
 ]

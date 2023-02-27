@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'api_img',
     'accounts',
     'blog',
+    'petsForms'
 ]
 
 MIDDLEWARE = [
