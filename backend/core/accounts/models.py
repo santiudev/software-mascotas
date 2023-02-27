@@ -29,4 +29,3 @@ class User(AbstractBaseUser):
     
     objects     = CustomAccountManager()
     USERNAME_FIELD = 'email'
-

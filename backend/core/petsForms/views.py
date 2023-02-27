@@ -2,11 +2,13 @@ from rest_framework import serializers
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework import status
 from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 from .models import Pet
 from .serializers import PetLost,PetFound
 # Create your views here.
 
 @api_view(["POST"])
+@permission_classes([IsAuthenticated])
 def petLost(request):
     data = request.data
     
@@ -26,6 +28,7 @@ def petLost(request):
         return Response(message, status=status.HTTP_400_BAD_REQUEST)
     
 @api_view(["POST"])
+@permission_classes([IsAuthenticated])
 def petFound(request):
     data = request.data
     try:

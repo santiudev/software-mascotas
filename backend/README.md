@@ -48,9 +48,9 @@
 >
 
 ## petsForms
-*account* is a django app for register and login of users
+*petForms* is a django app for create found and lost pets
 
-### *account* endpoints
+### *PetForms* endpoints
 >
 > /api/petForm/petFound/["POST"]
 >

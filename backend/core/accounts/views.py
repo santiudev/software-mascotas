@@ -38,6 +38,7 @@ class MyTokenObtainPairView(TokenObtainPairView):
 @api_view(["POST"])
 def register(request):
     data = request.data
+    print(data)
     try:
         user = User.objects.create(
             name=data["name"],
