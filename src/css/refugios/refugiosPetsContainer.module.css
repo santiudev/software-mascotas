@@ -1,0 +1,6 @@
+.petsContainer {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(20, 1fr);
+  grid-gap: 20px;
+}
