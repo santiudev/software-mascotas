@@ -57,6 +57,7 @@
 > *Create Lost Pet
 > Schema Example (formData)
 >
+<pre>
 {
     "id": 8,
     "name": "Pepe",
@@ -68,12 +69,13 @@
     "description": "perro grande",
     "created_at": "2023-02-27T18:34:02.019929Z"
 }
+</pre>
 >
 >
 > /api/petForm/petLost/     ["POST"]
 >
 > *Create Found Pet
-
+<pre>
 {
     "id": 13,
     "date": "2023-02-02",
@@ -84,5 +86,5 @@
     "description": "perro grande",
     "created_at": "2023-02-27T19:53:58.181635Z"
 }
-
+</pre>
 >
