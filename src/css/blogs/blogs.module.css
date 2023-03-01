@@ -1,3 +1,8 @@
 .blogs__container {
   margin: 120px;
 }
+
+.blogsData__container {
+  margin: 0 200px;
+  margin-top: 80px;
+}
