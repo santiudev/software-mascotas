@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import styles from "../css/refugios/refugios.module.css"
 import Nav from "../componentes/nav/nav"
