@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'api_img',
     'accounts',
     'blog',
+    'petsForms'
 ]
 
 MIDDLEWARE = [
@@ -86,6 +87,13 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
 }
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
+
 
 ROOT_URLCONF = 'core.urls'
 
@@ -189,3 +197,5 @@ CORS_ALLOW_HEADERS = [
     'x-requested-with',
 ]
 FILE_UPLOAD_PERMISSIONS=0o644
+
+AUTH_USER_MODEL = 'accounts.User'
