@@ -18,21 +18,22 @@ const RefugiosPetsContainer = () => {
   useEffect(() => {
     const initialPets = [
       {
-        title: 'gato',
-        image: tinyCat
-      },
-      {
         title: 'perro',
         image: borderDog
+      },
+      {
+        title: 'gato2',
+        image: catCow
       },
       {
         title: 'perro2',
         image: pug
       },
       {
-        title: 'gato2',
-        image: catCow
-      }
+        title: 'gato',
+        image: tinyCat
+      },
+      
     ]
 
     setPets(initialPets)
@@ -46,7 +47,7 @@ const RefugiosPetsContainer = () => {
         break;
       
       case 1:
-        cardClass = "large"
+        cardClass = "small"
         break;
       
       case 2:
@@ -54,7 +55,7 @@ const RefugiosPetsContainer = () => {
         break;
       
       case 3:
-        cardClass = "small"
+        cardClass = "large"
         break;
     }
 

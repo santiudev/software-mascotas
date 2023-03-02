@@ -8,10 +8,10 @@ const RefugioCard = ({title, image, clase}) => {
     let customStyle = {}
     switch(clase) {
       case "square": 
-        customStyle = { gridRow: "span 4", gridColumn: "span 4"}
+        customStyle = { gridRow: "span 5", gridColumn: "span 5"}
         break;
       case "small":
-        customStyle = { gridRow: "span 4", gridColumn: "span 3"}
+        customStyle = { gridRow: "span 1", gridColumn: "span 3"}
         break;
       case "large":
         customStyle = { gridRow: "span 4", gridColumn: "span 6"}
@@ -25,6 +25,7 @@ const RefugioCard = ({title, image, clase}) => {
   return (
     <article className={styles.refugiosCard} style={setClass(clase)} >
       <img src={image} alt={title} />
+      <button>Lorem</button>
     </article>
   )
 }
