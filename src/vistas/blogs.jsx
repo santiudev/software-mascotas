@@ -7,6 +7,11 @@ import BlogsParrafo from '../componentes/blogs/blogsParrafo';
 import BlogsSubtitulos from '../componentes/blogs/blogsSubtitulos';
 import BlogsNota from '../componentes/blogs/blogsNota';
 import BlogsListas from '../componentes/blogs/blogsListas';
+import fb_icon from '../iconos/facebook.png';
+import twitter_icon from '../iconos/twitter-sign.png';
+import ig_icon from '../iconos/instagram.png';
+import yt_icon from '../iconos/youtube.png';
+import PostsRelacionados from '../componentes/blogs/postsRelacionados/postsRelacionados';
 
 export default function Blogs({ imgP, tituloP }) {
 	const { id } = useParams();
@@ -57,6 +62,17 @@ export default function Blogs({ imgP, tituloP }) {
 						]}
 					/>
 					<BlogsParrafo text="Recuerda que este miedo a los petardos y fuegos artificiales requiere tanto de una solución puntual para momentos concretos como la verbena de San Juan, como medidas a largo plazo que incluyen terapias de modificación de conducta. Consulta a tu veterinario, es quien nos puede ayudar a dar con el mejor método para evitar que nuestras mascotas sufran durante la verbena y no lo olvides… PORQUE LOS QUEREMOS, LOS PROTEGEMOS." />
+					<p className={styles.blogs__refran}>LOS QUEREMOS, LOS PROTEGEMOS</p>
+					<div className={styles.blogs__footer}>
+						<span>17/06/2019 10:03</span>
+						<div>
+							<img src={fb_icon} alt='fb_icon' />
+							<img src={yt_icon} alt='yt_icon' />
+							<img src={ig_icon} alt='ig_icon' />
+							<img src={twitter_icon} alt='twitter_icon' />
+						</div>
+					</div>
+					<PostsRelacionados />
 				</div>
 			</div>
 			<Footer />
