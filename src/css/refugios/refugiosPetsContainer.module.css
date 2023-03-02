@@ -1,6 +1,9 @@
 .petsContainer {
+  height: 650px;
   display: grid;
-  grid-template-rows: repeat(8, 1fr);
-  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 5%;
   grid-gap: 20px;
+  overflow-x: scroll;
 }
