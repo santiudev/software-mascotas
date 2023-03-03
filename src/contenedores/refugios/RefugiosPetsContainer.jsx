@@ -23,7 +23,7 @@ const RefugiosPetsContainer = () => {
       },
       {
         title: 'gato2',
-        image: catCow
+        image: tinyCat
       },
       {
         title: 'perro2',
@@ -31,7 +31,7 @@ const RefugiosPetsContainer = () => {
       },
       {
         title: 'gato',
-        image: tinyCat
+        image: catCow
       },
       
     ]

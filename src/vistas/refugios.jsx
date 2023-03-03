@@ -19,7 +19,7 @@ const Refugios = () =>{
   return(
     <>
       <Nav/>
-      <img src={headerBar} alt="refugio pets bar" />
+      <img src={headerBar} className={styles.headerImg} alt="refugio pets bar" />
       <RefugiosPetsContainer />
       <section className={styles.servicios}>
         <h2 className={styles.servicios__titulo}>Nuestros Servicios</h2>

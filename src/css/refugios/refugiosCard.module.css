@@ -8,6 +8,7 @@
   position: relative;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -16,5 +17,16 @@
 
 .refugiosCard > button {
   z-index: 1;
-  transform: translateY(-15rem)
+  width: 5rem;
+  height: 3rem;
+  transform: translateY(3.5rem) translateX(.5rem);
+  border-radius: 8px;
+  border-style: none;
+  font-weight: bold;
+}
+
+.refugiosCard > button:hover {
+  cursor: pointer;
+  transform: translateY(3.5rem) translateX(.5rem) scale(1.2);
+  transition: all 400ms ease;
 }

@@ -1,3 +1,7 @@
+.headerImg {
+  width: 100%;
+}
+
 .servicios{
   display: flex;
   flex-direction: column;
