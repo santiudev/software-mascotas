@@ -11,10 +11,10 @@ const RefugioCard = ({title, image, clase}) => {
         customStyle = { gridRow: "span 5", gridColumn: "span 5"}
         break;
       case "small":
-        customStyle = { gridRow: "span 1", gridColumn: "span 3"}
+        customStyle = { gridRow: "span 2", gridColumn: "span 3"}
         break;
       case "large":
-        customStyle = { gridRow: "span 4", gridColumn: "span 6"}
+        customStyle = { gridRow: "span 3", gridColumn: "span 6"}
         break;
       default: customStyle = { gridRow: 1, gridColumn: 1}
     }
@@ -24,8 +24,8 @@ const RefugioCard = ({title, image, clase}) => {
 
   return (
     <article className={styles.refugiosCard} style={setClass(clase)} >
-      <img src={image} alt={title} />
       <button>Lorem</button>
+      <img src={image} alt={title} />
     </article>
   )
 }
