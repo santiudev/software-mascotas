@@ -35,48 +35,81 @@ const Nav = () => {
 
 	const [modal, setModal] = useState(false)
 
+	const [ showLinks, setShowLinks ] = useState(false)
+
+	const handleShowLinks = () => {
+			setShowLinks(!showLinks)
+	}
+
+
 	return(
-		<nav className={styles.nav}>
-			<LetraTitulo
-				texto="Ho-Pet" 
-				clase="letra-titulo--red"
-			/>
-			<div className={styles["nav__contenedor-botones"]}>
-				{
-					botones.map((btn, indice)=>{
-						return(
-							<NavLink to={btn.path} key={indice}>
-								{({ isActive }) => (
-									<BtnNav
-										clase={isActive ? "btn--principal" : "btn--secundario"}
-										texto={btn.texto}
-									/>
-								)}
-							</NavLink>
-						);
-					})
-				}
-			</div>
-      <div className={styles["nav__contenedor-elementos"]}>
-        <p className={styles.nav__separador}>|</p>
-        <BtnLateral 
-          src={imgSearch}
-          alt="Search"
-        />
-        <BtnLateral 
-          src={imgLogin}
-          alt="Login"
-        />
-        <BtnPrincipal
+			<nav className={styles.nav}>
+
+					{/* ${showLinks ? "show-nav" : "hide-nav"} */}
+
+					<LetraTitulo
+							texto="Ho-Pet" 
+							clase="letra-titulo--red"
+					/>
+
+					<button className={styles["navbar__burger"]} onClick={handleShowLinks}>
+							<span className={styles["burger-bar"]}></span>
+					</button>
+
+
+					<div className={showLinks ? [styles.show_nav] : [styles.hide_nav]}>
+
+					<div className={styles["nav__contenedor-botones"]} >
+							{
+									botones.map((btn, indice)=>{
+											return(
+													<NavLink to={btn.path} key={indice}>
+															{({ isActive }) => (
+																	<BtnNav
+																			clase={isActive ? "btn--principal" : "btn--secundario"}
+																			texto={btn.texto}
+																	/>
+															)}
+													</NavLink>
+											);
+									})
+							}
+
+					<BtnPrincipal
 					texto="Reportar"
-					setModal={setModal}
-				/>
-      </div>
-			{
-				modal && (<Formulario setModal={setModal}/>)
-			}
-    </nav>
+									setModal={setModal}
+							/>
+					</div>
+
+					
+
+		{/* <div className={styles["nav__contenedor-elementos"]} >
+			<p className={styles.nav__separador}>|</p>
+			<BtnLateral 
+				src={imgSearch}
+				alt="Search"
+			/>
+			<BtnLateral 
+				src={imgLogin}
+				alt="Login"
+			/> 
+			<BtnPrincipal
+					texto="Reportar"
+									setModal={setModal}
+							/>
+
+		</div>  */}
+
+		</div>
+					
+					{
+							modal && (<Formulario setModal={setModal}/>)
+					} 
+					
+					
+
+	</nav>
 	);
-}
+} 
 
 export default Nav;
