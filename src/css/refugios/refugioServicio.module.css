@@ -1,4 +1,5 @@
 .servicio{
+  width: 12.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
