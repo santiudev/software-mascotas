@@ -1,25 +1,35 @@
 .headerImg {
   width: 100%;
 }
+.main{
+  margin-bottom: 5rem;
+}
 
-.servicios{
+.main, .servicio{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  margin-bottom: 5rem;
 }
 
 .servicios__titulo{
+  text-align: center;
   font-size: 2.25rem;
 }
 
 .servicios__container{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 3rem;
   max-width: 80vw;
+}
+
+.servicios__container--separacion{
+  gap: 2vh 15vw;
+  background-color: #E7DCC7;
+  padding: 3rem;
+  border-radius: 3.125rem 0.625rem 3.125rem 0.625rem;
 }
 
 .servicios__section{
