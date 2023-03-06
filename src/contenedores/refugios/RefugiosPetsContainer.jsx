@@ -59,7 +59,6 @@ const RefugiosPetsContainer = () => {
         break;
     }
 
-    console.log(cardClass)
     return cardClass
   }
   const cards = pets.map((object, i) => (<RefugioCard key={i} title={object.title} image={object.image} clase={setClass(i)}/>))
