@@ -16,6 +16,18 @@ class CustomAccountManager(BaseUserManager):
         user.set_password(password)
         user.save()
         return user
+    
+    def create_superuser(self, email, user_name, first_name, password, **other_fields):
+        other_fields.setdefault('is_staff', True)
+        other_fields.setdefault('is_superuser', True)
+        other_fields.setdefault('is_active', True)
+
+        if other_fields.get('is_staff') is not True:
+            raise ValueError('Superuser must be assigned to is_staff=True.')
+        if other_fields.get('is_superuser') is not True:
+            raise ValueError(
+                'Superuser must be assigned to is_superuser=True.')
+        return self.create_user(email, user_name, first_name, password, **other_fields)
 
 ## Modelo Usuario, Creado apartir del modelo "AbstractBaseUser"
 ## El modelo define los campos del usuario y el manageador del modelo
@@ -26,6 +38,8 @@ class User(AbstractBaseUser):
     phone  = models.DateTimeField(default=timezone.now)
     bio         = models.TextField(_('bio'), max_length=256, blank=True)
     image       = models.ImageField(null=True, blank=True, default='/pic.jpg')
+    is_staff    = models.BooleanField(default=False)
+    is_active   = models.BooleanField(default=True)
     
     objects     = CustomAccountManager()
     USERNAME_FIELD = 'email'
