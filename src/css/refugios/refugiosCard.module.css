@@ -13,6 +13,7 @@
   height: 100%;
   overflow: hidden;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .refugiosCard > button {

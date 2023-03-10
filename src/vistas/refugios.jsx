@@ -46,11 +46,11 @@ const Refugios = () =>{
               <h3 className={styles.servicios__subtitulo}>Lo mejor para tu mascota</h3>
               <p className={styles.servicios__parrafo}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Optio molestiae sint quod ipsum aliquam nesciunt. 
+                Optio molestiae sint quod ipsum aliquam nesciunt.
                 Repellendus architecto, explicabo, molestiae iste nobis repellat
                 sunt voluptates sapiente voluptas cupiditate cum placeat nostrum.
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Optio molestiae sint quod ipsum aliquam nesciunt. 
+                Optio molestiae sint quod ipsum aliquam nesciunt.
                 Repellendus architecto, explicabo, molestiae iste nobis repellat
                 sunt voluptates sapiente voluptas cupiditate cum placeat nostrum.
               </p>
