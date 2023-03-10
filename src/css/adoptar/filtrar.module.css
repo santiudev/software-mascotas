@@ -45,7 +45,7 @@
 	border: 1px solid #000;
 	border-radius: 0 0 5px 5px;
 	overflow-y: scroll;
-	transition: height .8s;
+	transition: height .6s;
 }
 
 .filter__option::-webkit-scrollbar {
@@ -86,5 +86,5 @@
 	width: 20px;
 	right: 15px;
 	top: 15px;
-	transition: transform .8s;
+	transition: transform .6s;
 }
