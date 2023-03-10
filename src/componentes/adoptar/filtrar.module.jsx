@@ -1,15 +1,32 @@
+import { useState } from 'react';
 import styles from '../../css/adoptar/filtrar.module.css';
+import Opcion from './opcion';
+import downIcon from '../../iconos/down-filled-triangular-arrow.png';
 
 const Filtrar = () => {
+	const [verValores, setVerValores] = useState(false);
+
 	return (
 		<div className={styles.filtrar}>
-			<h1></h1>
-			<input className={styles.filtrar__input} list="razas" id="razas_id" name="razas_id" />
-			<datalist id="razas">
-				<option value="Perros" />
-				<option value="Gatos" />
-			</datalist>
-      <button className={styles.filtrar__btn}>Filtrar</button>
+			<input
+				className={styles.filtrar__input}
+				type="text"
+				onFocus={() => setVerValores(true)}
+				placeholder="-- Todos --"
+				id="input"
+			/>
+			<img className={styles.filtrar__down} src={downIcon} alt="down" />
+			<div
+				className={styles.filter__option}
+				style={verValores ? { display: 'flex' } : {}}>
+				<Opcion tipo="-- Todos --" view={setVerValores} />
+				<Opcion tipo="Perros" view={setVerValores} />
+				<Opcion tipo="Gatos" view={setVerValores} />
+				<Opcion tipo="Pajaros" view={setVerValores} />
+				<Opcion tipo="Conejos" view={setVerValores} />
+				<Opcion tipo="Insectos" view={setVerValores} />
+			</div>
+			<button className={styles.filtrar__btn}>Filtrar</button>
 		</div>
 	);
 };
