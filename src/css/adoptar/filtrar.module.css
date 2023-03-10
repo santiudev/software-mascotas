@@ -38,15 +38,14 @@
 }
 
 .filter__option {
-	display: none;
+	position: relative;
+	display: flex; /* Change */
 	flex-direction: column;
-	position: absolute;
-	right: -215px;
-	width: 200px;
-	height: 140px;
+	height: 0;
 	border: 1px solid #000;
-	border-radius: 5px;
+	border-radius: 0 0 5px 5px;
 	overflow-y: scroll;
+	transition: height .8s;
 }
 
 .filter__option::-webkit-scrollbar {
@@ -77,10 +76,6 @@
 	background-color: #aba7a7;
 }
 
-.filter__option>span:first-child {
-	border-radius: 5px 5px 0 0;
-}
-
 .filter__option>span:last-child {
 	border-bottom: none;
 	border-radius: 0 0 5px 5px;
@@ -91,4 +86,5 @@
 	width: 20px;
 	right: 15px;
 	top: 15px;
+	transition: transform .8s;
 }
