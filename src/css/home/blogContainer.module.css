@@ -1,5 +1,26 @@
 .blogContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 2% 0;
+  transition: all 300ms ease;
+}
+
+.blogMegaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+.blogMegaContainer > button {
+  border-style: none;
+   z-index: 1;
+}
+
+.blogMegaContainer > button:hover {
+  cursor: pointer;
+}
+
+.blogMegaContainer > button > img {
+  transform: scale(3);
 }
