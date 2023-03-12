@@ -4,8 +4,9 @@ import React from 'react'
 import styles from '../../css/home/blog.module.css'
 
 const blog = ({ title, content, img }) => {
+
   return(
-    <article className={styles.blog}>
+    <article className={`${styles.blog} blog`}>
       <img src={img} alt="blog image" />
       <h2>{title}</h2>
       <p>{content}</p>
