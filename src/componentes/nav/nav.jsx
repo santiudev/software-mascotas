@@ -27,8 +27,8 @@ const botones = [
 	{texto: "Encontrados", path: "/encontrados"},
 	{texto: "Adoptar", path: "/adoptar"},
 	{texto: "Blog", path: "/blog"},
-	{texto: "Contacto", path: "/contacto"},
-	{texto: "Refugios", path: "/refugios"}
+	{texto: "Refugios", path: "/refugios"},
+	{texto: "Contacto", path: "/contacto"}
 ];
 
 const Nav = () => {
