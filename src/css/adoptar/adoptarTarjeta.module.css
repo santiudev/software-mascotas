@@ -12,7 +12,7 @@
   align-items: center;
   border: 21px red;
   border-radius: 50% 0 0 50%;
-  background-color: #9c1c1c21;
+  background-color: #f2e2e2;
 }
 
 .adoptarTarjeta__img>img {
@@ -25,7 +25,7 @@
 .adoptarTarjeta__description {
   padding-left: 20px;
   padding-right: 10px;
-  background-color: #9c1c1c21;
+  background-color: #f2e2e2;
   background-image: url("../../iconos/paw.png");
   background-size: 50px;
   background-position-x: 95%;
