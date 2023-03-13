@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import React, { useEffect, useState } from 'react'
 
 import Blog from '../../componentes/home/blog'
@@ -6,6 +7,8 @@ import axios from 'axios'
 
 import styles from '../../css/home/blogContainer.module.css'
 
+import arrowLeft from '../../iconos/bx-chevron-left.svg'
+import arrowRight from '../../iconos/bx-chevron-right.svg'
 const BlogContainer = () => {
 
   const [data, setData] = useState([{}])
@@ -19,10 +22,12 @@ const BlogContainer = () => {
   },[])
 
   return (
-    <section className={styles.blogContainer}>
-    {data.map((object, i) => {
-      return (<Blog key={i} title={object.title} content={object.content} img={object.img}/>)
-    })}
+    <section className={styles.blogMegaContainer}>
+      <section className={`${styles.blogContainer} blogContainer`}>
+      {data.map((object, i) => {
+        return (<Blog key={i} title={object.title} content={object.content} img={'#'}/>)
+      })}
+      </section>
     </section>
   )
   
