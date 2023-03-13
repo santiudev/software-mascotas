@@ -21,31 +21,13 @@ const BlogContainer = () => {
     fetchResponse()
   },[])
 
-  const handleMove = (direction) => {
-    const blogs = document.querySelector('.blogContainer')
-    let translateValue = ''
-    switch(direction) {
-      case 'front': translateValue='-50'; break;
-      case 'back':  translateValue='50'; break;
-    }
-    
-    blogs.style.transform = `translateX(${translateValue}%)`
-
-  }
-
   return (
     <section className={styles.blogMegaContainer}>
-      <button onClick={() => handleMove('back')}>
-        <img src={arrowLeft} alt="" />
-      </button>
       <section className={`${styles.blogContainer} blogContainer`}>
       {data.map((object, i) => {
         return (<Blog key={i} title={object.title} content={object.content} img={'#'}/>)
       })}
       </section>
-      <button onClick={() => handleMove('front')}>
-        <img src={arrowRight} alt="" />
-      </button>
     </section>
   )
   
