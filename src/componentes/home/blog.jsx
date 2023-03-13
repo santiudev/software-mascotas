@@ -7,7 +7,7 @@ const blog = ({ title, content, img }) => {
 
   return(
     <article className={`${styles.blog} blog`}>
-      <img src={img} alt="blog image" />
+      <img src={"#"} alt="blog image" />
       <h2>{title}</h2>
       <p>{content}</p>
       <a>Leer mas +</a>
