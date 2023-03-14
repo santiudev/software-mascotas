@@ -6,6 +6,7 @@ import styles from '../../css/Formulario/formulario.module.css';
 import dog from '../../iconos/imagenes recursos/dog-seating.png';
 import pet from '../../iconos/imagenes recursos/pet.png';
 import close from '../../iconos/imagenes recursos/close.png';
+import bg from '../../iconos/imagenes recursos/bg_form.webp';
 
 /**
  Petype = es un booleano que indica si el formulario es para reportar una mascota
@@ -28,10 +29,14 @@ const formulario = ({ setModal }) => {
 	};
 
 	return (
-		<div className={styles.formContainer}>
-			<form action="POST" onSubmit={handleSubmit} className={styles.form}>
+		<div className={styles.formContainer} style={petType ? {height: '600px'} : {height: '550px'}}>
+			<form
+				action="POST"
+				onSubmit={handleSubmit}
+				className={styles.form}>
 				<div className={styles.headerForm}>
 					<div
+						style={{ borderRadius: '8px 0 0 0' }}
 						className={petType ? styles.petSelected : styles.pet}
 						onClick={() => setPetType(true)}>
 						<img src={dog} alt="dog draw" /> Perdido
@@ -45,41 +50,43 @@ const formulario = ({ setModal }) => {
 						<img src={close} alt="close-icon" />
 					</button>
 				</div>
-				<div className={styles.buttonFile}>
-					<label
-						style={
-							uploadImgHover
-								? { backgroundColor: 'rgba(222, 52, 29, 0.5)' }
-								: {}
-						}>
-						{file ? `Foto subida` : `Subir foto`}
-					</label>
-					<input
-						type="file"
-						accept=".jpg, .jpeg, .png"
-						id="petFile"
-						className={styles.buttonFile}
-						onInput={() => setFile(true)}
-						onMouseEnter={() => setUploadImgHover(true)}
-						onMouseLeave={() => setUploadImgHover(false)}
-					/>
+				<div className={styles.mainForm}>
+					<div className={styles.buttonFile}>
+						<label
+							style={
+								uploadImgHover
+									? { backgroundColor: 'rgba(222, 52, 29, 0.5)' }
+									: {}
+							}>
+							{file ? `Foto subida` : `Subir foto`}
+						</label>
+						<input
+							type="file"
+							accept=".jpg, .jpeg, .png"
+							id="petFile"
+							className={styles.buttonFile}
+							onInput={() => setFile(true)}
+							onMouseEnter={() => setUploadImgHover(true)}
+							onMouseLeave={() => setUploadImgHover(false)}
+						/>
+					</div>
+					<section className={styles.form_inputs} style={petType ? {height: '130px'} : {height: '80px'}}>
+						{ petType ? <input type="text" name="name" placeholder="Nombre" /> : '' }
+						<div>
+							<input type="text" name="size" placeholder="Tamaño" />
+							<input type="text" name="zone" placeholder="Zona" />
+						</div>
+						<div>
+							<input type="tel" name="contact" placeholder="Contacto" />
+							<input type="date" name="date" placeholder="Fecha" />
+						</div>
+					</section>
+					<h3>Descripción</h3>
+					<textarea name="description" cols="30" rows="10"></textarea>
+					<button onClick={handleSubmit} className={styles.submitButon}>
+						Enviar
+					</button>
 				</div>
-				<section className={styles.form_inputs}>
-					<input type="text" name="name" placeholder="Nombre" />
-					<div>
-						<input type="text" name="size" placeholder="Tamaño" />
-						<input type="text" name="zone" placeholder="Zona" />
-					</div>
-					<div>
-						<input type="tel" name="contact" placeholder="Contacto" />
-						<input type="date" name="date" placeholder="Fecha" />
-					</div>
-				</section>
-				<h3>Descripción</h3>
-				<textarea name="description" cols="30" rows="10"></textarea>
-				<button onClick={handleSubmit} className={styles.submitButon}>
-					Enviar
-				</button>
 			</form>
 		</div>
 	);
