@@ -66,6 +66,7 @@ const Blog = () => {
 						fecha="17/06/2019 10:03"
 					/>
 					<Card
+						id={2}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="¿Por qué no deberías dejar comida para gatos en el exterior?"
@@ -73,6 +74,7 @@ const Blog = () => {
 						fecha="17/06/2019 10:03"
 					/>
 					<Card
+					id={3}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="¿Por qué no deberías dejar a tus hijos solos con mascotas desconocidas?"

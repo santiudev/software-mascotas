@@ -7,6 +7,13 @@
 	border: 1px solid #0000004d;
 	box-shadow: 4px 4px 15px 0px #00000080;
 	border-radius: 10px;
+	color: #000;
+	text-decoration: none;
+	transition: transform .5s;
+}
+
+.cardContainer:hover {
+	transform: scale(1.05);
 }
 
 .cardContainer > img {
@@ -35,6 +42,10 @@
 	font-style: normal;
 	font-weight: 600;
   font-size: 18px;
+}
+
+.cardContainer__titulo:hover {
+	text-decoration: underline;
 }
 
 .cardContainer__descripcion {
