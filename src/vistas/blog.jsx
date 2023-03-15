@@ -17,6 +17,7 @@ const Blog = () => {
 				/>
 				<div className={styles.blog__card}>
 					<Card
+						id={1}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="Proteger a nuestras mascotas durante la verbena de San Juan"
@@ -24,6 +25,7 @@ const Blog = () => {
 						fecha="17/06/2019 10:03"
 					/>
 					<Card
+						id={2}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="Proteger a nuestras mascotas durante la verbena de San Juan"
@@ -31,6 +33,7 @@ const Blog = () => {
 						fecha="17/06/2019 10:03"
 					/>
 					<Card
+					id={3}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="Proteger a nuestras mascotas durante la verbena de San Juan"
@@ -38,6 +41,7 @@ const Blog = () => {
 						fecha="17/06/2019 10:03"
 					/>
 					<Card
+					id={4}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="Proteger a nuestras mascotas durante la verbena de San Juan"
@@ -45,6 +49,7 @@ const Blog = () => {
 						fecha="17/06/2019 10:03"
 					/>
 					<Card
+					id={5}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="Proteger a nuestras mascotas durante la verbena de San Juan"
@@ -52,6 +57,7 @@ const Blog = () => {
 						fecha="17/06/2019 10:03"
 					/>
 					<Card
+					id={6}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="Proteger a nuestras mascotas durante la verbena de San Juan"
@@ -59,6 +65,7 @@ const Blog = () => {
 						fecha="17/06/2019 10:03"
 					/>
 					<Card
+					id={7}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="Proteger a nuestras mascotas durante la verbena de San Juan"
@@ -66,6 +73,7 @@ const Blog = () => {
 						fecha="17/06/2019 10:03"
 					/>
 					<Card
+					id={8}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="Proteger a nuestras mascotas durante la verbena de San Juan"
@@ -73,6 +81,7 @@ const Blog = () => {
 						fecha="17/06/2019 10:03"
 					/>
 					<Card
+					id={9}
 						img="https://nfnatcane.es/blog/wp-content/uploads/2022/10/historia-de-la-raza-chihuahua.jpg"
 						consejo="Consejo"
 						titulo="Proteger a nuestras mascotas durante la verbena de San Juan"
