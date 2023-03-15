@@ -2,12 +2,12 @@ from django.db import models
 from PIL import Image
 import io
 from django.core.files.base import ContentFile
-
+from ckeditor.fields import RichTextField
 
 
 class Post(models.Model):
     title = models.CharField(max_length=50)
-    content = models.TextField(max_length=350)
+    content = RichTextField()
     img = models.ImageField(upload_to='images')
     created_at = models.DateTimeField(auto_now_add=True)
     class Meta:
@@ -23,9 +23,9 @@ class Post(models.Model):
             # crea un buffer de memoria
             buffer = io.BytesIO()
             # guarda la imagen en el buffer con una calidad del 80%
-            img.save(buffer, format='JPEG', quality=80)
+            img.save(buffer, format='WEBP', quality=80)
             # guarda los datos de la imagen en una variable de bytes
             image_data = buffer.getvalue()
             # sobrescribe el archivo de imagen original con la imagen comprimida
-            self.img.save(self.img.name, ContentFile(image_data), save=False)
+            self.img.save(self.img.name.split('.')[0] + '.webp', ContentFile(image_data), save=False)
         super().save(*args, **kwargs)

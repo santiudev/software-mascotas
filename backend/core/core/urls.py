@@ -8,7 +8,7 @@ urlpatterns = [
     path('api/hti/', include('api_img.urls')),
     path('api/accounts/', include('accounts.urls')),
     path('blog/', include('blog.urls')),
-    path('api/petForm/', include('petsForms.urls'))
+    path('api/petForm/', include('petsForms.urls')),
 ]
 if settings.DEBUG:
   urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
