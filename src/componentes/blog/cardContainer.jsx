@@ -1,8 +1,8 @@
 import styles from '../../css/blog/cardContainer.module.css';
 
-const Card = ({ img, consejo, titulo, descripcion, fecha }) => {
+const Card = ({ id, img, consejo, titulo, descripcion, fecha }) => {
 	return (
-		<div className={styles.cardContainer}>
+		<a href={`/blogs/${id}`} className={styles.cardContainer}>
 			<img src={img} alt={`${img}_img`} />
 			<div className={styles.cardContainer__content}>
 				<span className={styles.cardContainer__consejo}>{consejo}</span>
@@ -12,7 +12,7 @@ const Card = ({ img, consejo, titulo, descripcion, fecha }) => {
 				</div>
 				<span className={styles.cardContainer__fecha}>{fecha}</span>
 			</div>
-		</div>
+		</a>
 	);
 };
 
