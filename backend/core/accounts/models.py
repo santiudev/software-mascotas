@@ -29,7 +29,7 @@ class CustomAccountManager(BaseUserManager):
 
 ## Modelo Usuario, Creado apartir del modelo "AbstractBaseUser"
 ## El modelo define los campos del usuario y el manageador del modelo
-class User(AbstractBaseUser):
+class User(AbstractBaseUser, PermissionsMixin):
     email       = models.EmailField(_('email address'), unique=True)
     name   = models.CharField(max_length=30)
     age = models.CharField(max_length=30)
@@ -42,3 +42,9 @@ class User(AbstractBaseUser):
     objects     = CustomAccountManager()
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name']
+
+    def has_perm(self, perm, obj=None):
+       return self.is_superuser
+
+    def has_module_perms(self, app_label):
+       return self.is_superuser
