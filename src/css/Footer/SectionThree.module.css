@@ -56,4 +56,9 @@
 .sectionThree__redes > a > img {
   width: 30px;
   border-radius: 5px;
+	transition: opacity .3s;
+}
+
+.sectionThree__redes>a>img:hover {
+	opacity: .5;
 }

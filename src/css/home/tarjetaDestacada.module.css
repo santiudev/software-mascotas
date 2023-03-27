@@ -1,7 +1,7 @@
 .card {
   width: 220px;
   height: 220px;
-  padding: 1%;
+  padding: 10px;
   background: linear-gradient(120deg, #9A5D30 16.69%, #FAFAFA 100%);
   display: flex;
   justify-content: space-between;
@@ -17,9 +17,28 @@
   transition: all 100ms ease-in-out;
 }
 
-.card > img {
-  height: 200px;
-  width: 200px;
+.cardNoExtended {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardNoExtended>p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 15%;
+  text-align: center;
+  background-color: #de523f;
+  border-radius: 8px;
+  color: #FAFAFA;
+}
+
+.cardNoExtended>img {
+  height: 170px;
+  width: 170px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -30,11 +49,11 @@
   margin: 4%;
 }
 
-.card:hover > .cardExtended{
+.card:hover>.cardExtended {
   display: block;
 }
 
-.cardExtended > h3 {
+.cardExtended>h3 {
   padding: 3%;
   text-align: center;
   background-color: #de523f;
@@ -42,7 +61,7 @@
   color: #FAFAFA;
 }
 
-.cardExtended > ul {
+.cardExtended>ul {
   list-style: none;
 }
 
@@ -53,13 +72,13 @@
   cursor: pointer;
 }
 
-.cardButton > img {
+.cardButton>img {
   width: fit-content;
   height: fit-content;
   transition: all 200ms ease;
 }
 
-.cardButton > img:hover {
+.cardButton>img:hover {
   transform: scale(1.3);
 }
 
