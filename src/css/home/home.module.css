@@ -1,4 +1,4 @@
-.header{
+.header {
   height: 100vh;
   background-image: url(../../iconos/imagenes\ recursos/img-home.jpg);
   background-attachment: fixed;
@@ -23,21 +23,27 @@
   margin-left: 1rem;
 }
 
-.header__buttons{
+.header__buttons {
   display: flex;
   justify-content: space-evenly;
 }
 
 .adopciones {
-  margin-top: 2rem;
-  padding: 1%;
+  background-image: linear-gradient(to right, #fff4 0 100%), url(../../iconos/imagenes\ recursos/adopciones_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fffa;
+  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
-.adopciones > div {
+.adopciones>div {
   margin: 0 43%;
   margin-bottom: 2rem;
 }
-.publicacion-destacada{
+
+.publicacion-destacada {
   text-align: center;
   margin: 1.6rem 0;
   display: flex;
@@ -46,7 +52,7 @@
   gap: 1.6rem;
 }
 
-.publicacion-destacada__buttons{
+.publicacion-destacada__buttons {
   display: flex;
   width: 50%;
   justify-content: space-evenly;
@@ -55,11 +61,11 @@
   padding-bottom: 1rem;
 }
 
-.publicacion-destacada__buttons > button{
+.publicacion-destacada__buttons>button {
   padding: 1rem;
 }
 
-.sobre-nosotros{
+.sobre-nosotros {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,21 +73,21 @@
   margin: 5rem 0;
 }
 
-.sobre-nosotros__container{
+.sobre-nosotros__container {
   display: flex;
   justify-content: space-evenly;
   gap: 3rem;
   flex-wrap: wrap;
 }
 
-.sobre-nosotros__section{
+.sobre-nosotros__section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width:clamp(20vw, 42rem, 90vw);
+  max-width: clamp(20vw, 42rem, 90vw);
   color: #343A40;
 }
 
-.sobre-nosotros__section > div > p{
+.sobre-nosotros__section>div>p {
   font-size: 18px;
 }
