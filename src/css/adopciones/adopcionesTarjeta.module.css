@@ -1,7 +1,6 @@
 .tarjeta {
   display: block;
   padding: 1%;
-  background: transparent;
   text-align: center;
   border-radius: 50%;
   z-index: 1;
@@ -9,13 +8,25 @@
   margin-bottom: 3rem;
 }
 
-.tarjeta > img {
+.tarjeta>img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.tarjeta > div {
+.tarjeta>div {
   margin: 0 30%;
+}
+
+.text {
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+  font-size: 22px;
+}
+
+.text:nth-child(2) {
+  font-size: 30px;
+  margin: 0;
 }
