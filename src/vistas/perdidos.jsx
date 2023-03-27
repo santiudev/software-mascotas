@@ -32,7 +32,7 @@ const Perdidos = () => {
 				</section>
 				<section className={styles.perdidos__tarjeta_container}>
 					{Data.map(
-						({ id, tamaño, fecha, lugar, contacto, descripcion, imagen }) => {
+						({ id, nombre, tamaño, fecha, lugar, contacto, descripcion, imagen }) => {
 							return (
 								<PerdidosTarjeta
 									key={id}
@@ -40,7 +40,7 @@ const Perdidos = () => {
 									contacto={contacto}
 									desc={descripcion}
 									fecha={fecha}
-									nombre={id}
+									nombre={nombre}
 									tam={tamaño}
 									zona={lugar}
 								/>
