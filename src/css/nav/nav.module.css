@@ -2,7 +2,7 @@
 	background-color: white;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	user-select: none;
 	box-shadow: 0 4px 2rem;
 	height: 6rem;
@@ -31,4 +31,8 @@
 	font-size: 2rem;
 	margin: 0;
 	padding-bottom: .6rem;
+}
+
+.logo {
+	width: 160px;
 }
