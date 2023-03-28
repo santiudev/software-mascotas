@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import styles from "../../css/nav/nav.module.css";
 
 // Componentes
-import LetraTitulo from "../principales/LetraTitulo";
 import BtnNav from "./btnNav";
 import BtnLateral from "./BtnLateral"
 import BtnPrincipal from "../principales/btnPrincipal";
@@ -15,6 +14,7 @@ import Formulario from '../Formulario/formulario';
 // Imágenes
 import imgSearch from "../../iconos/search.png";
 import imgLogin from "../../iconos/login 2.png"
+import { Logo } from '../../iconos/svg/icons_svg';
 
 /*
 	Array formado de objetos que permite la creación
@@ -35,80 +35,31 @@ const Nav = () => {
 
 	const [modal, setModal] = useState(false)
 
-	const [ showLinks, setShowLinks ] = useState(false)
-
-	const handleShowLinks = () => {
-			setShowLinks(!showLinks)
-	}
-
-
-	return(
-			<nav className={styles.nav}>
-
-					{/* ${showLinks ? "show-nav" : "hide-nav"} */}
-
-					<LetraTitulo
-							texto="Ho-Pet" 
-							clase="letra-titulo--red"
-					/>
-
-					<button className={styles["navbar__burger"]} onClick={handleShowLinks}>
-							<span className={styles["burger-bar"]}></span>
-					</button>
-
-
-					<div className={showLinks ? [styles.show_nav] : [styles.hide_nav]}>
-
-					<div className={styles["nav__contenedor-botones"]} >
-							{
-									botones.map((btn, indice)=>{
-											return(
-													<NavLink to={btn.path} key={indice}>
-															{({ isActive }) => (
-																	<BtnNav
-																			clase={isActive ? "btn--principal" : "btn--secundario"}
-																			texto={btn.texto}
-																	/>
-															)}
-													</NavLink>
-											);
-									})
-							}
-
-					<BtnPrincipal
-					texto="Reportar"
-									setModal={setModal}
-							/>
-					</div>
-
-					
-
-		{/* <div className={styles["nav__contenedor-elementos"]} >
-			<p className={styles.nav__separador}>|</p>
-			<BtnLateral 
-				src={imgSearch}
-				alt="Search"
-			/>
-			<BtnLateral 
-				src={imgLogin}
-				alt="Login"
-			/> 
-			<BtnPrincipal
-					texto="Reportar"
-									setModal={setModal}
-							/>
-
-		</div>  */}
-
-		</div>
-					
-					{
-							modal && (<Formulario setModal={setModal}/>)
-					} 
-					
-					
-
-	</nav>
+	return (
+		<nav className={styles.nav}>
+			<Logo className={styles.logo} />
+			<div className={styles['nav__contenedor-botones']}>
+				{botones.map((btn, indice) => {
+					return (
+						<NavLink to={btn.path} key={indice}>
+							{({ isActive }) => (
+								<BtnNav
+									clase={isActive ? 'btn--principal' : 'btn--secundario'}
+									texto={btn.texto}
+								/>
+							)}
+						</NavLink>
+					);
+				})}
+			</div>
+			<div className={styles['nav__contenedor-elementos']}>
+				<p className={styles.nav__separador}>|</p>
+				<BtnLateral src={imgSearch} alt="Search" />
+				<BtnLateral src={imgLogin} alt="Login" />
+				<BtnPrincipal texto="Reportar" setModal={setModal} />
+			</div>
+			{modal && <Formulario setModal={setModal} />}
+		</nav>
 	);
 } 
 

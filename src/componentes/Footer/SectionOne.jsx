@@ -1,9 +1,10 @@
 import styles from '../../css/Footer/SectionOne.module.css';
+import { Logo } from '../../iconos/svg/icons_svg'
 
-export default function SectionOne({ title, parrafo }) {
+export default function SectionOne({ parrafo }) {
   return (
 		<section className={styles.sectionOne__footer}>
-			<h3 className={styles.h3__sectionOne}>{ title }</h3>
+			<Logo className={styles.logo} />
 			<p className={styles.p__sectionOne}>
 				{ parrafo }
 			</p>
