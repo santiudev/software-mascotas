@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from "../componentes/nav/nav";
+import Nav from '../componentes/nav/nav';
 import Footer from '../../src/componentes/Footer/Footer';
 import styles from '../css/Perdidos/perdidos.module.css';
 import PerdidosTarjeta from '../componentes/Perdidos/perdidosTarjeta';
@@ -9,7 +9,7 @@ import Paginacion from '../componentes/Perdidos/paginacion';
 import LetraParrafo from '../componentes/principales/letraParrafo';
 
 const Encontrados = () => {
-  return (
+	return (
 		<>
 			<Nav />
 			<div className={styles.perdidos}>
@@ -29,7 +29,16 @@ const Encontrados = () => {
 				</section>
 				<section className={styles.perdidos__tarjeta_container}>
 					{Data.map(
-						({ id, tamaño, fecha, lugar, contacto, descripcion, imagen }) => {
+						({
+							id,
+							nombre,
+							tamaño,
+							fecha,
+							lugar,
+							contacto,
+							descripcion,
+							imagen,
+						}) => {
 							return (
 								<PerdidosTarjeta
 									key={id}
@@ -37,10 +46,10 @@ const Encontrados = () => {
 									contacto={contacto}
 									desc={descripcion}
 									fecha={fecha}
-									nombre={id}
+									nombre={nombre}
 									tam={tamaño}
 									zona={lugar}
-                    encontrado={true}
+									encontrado={true}
 								/>
 							);
 						}
@@ -51,6 +60,6 @@ const Encontrados = () => {
 			<Footer />
 		</>
 	);
-}
+};
 
-export default Encontrados
+export default Encontrados;

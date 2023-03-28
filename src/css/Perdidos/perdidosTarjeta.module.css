@@ -12,11 +12,9 @@
 	justify-content: center;
 	align-items: center;
 	width: 300px;
-	background: linear-gradient(180deg, #9a5d30 0%, #fafafa 100%);
 	padding: 30px;
-	border: 1px solid #000;
 	border-radius: 10px;
-	box-shadow: 20px 20px 10px 0px #00000080;
+	background-color: #fff9;
 }
 
 .perdidosTarjeta__subdata_container {
@@ -31,19 +29,37 @@
 	right: 15px;
 }
 
-.perdidosTarjeta__h3 {
+.perdidosTarjeta__h3_red {
 	color: #fff;
-	background-color: #de341d99;
+	background-color: #de341dcc;
 	padding: 7px 20px;
 	border-radius: 5px;
 }
 
+.perdidosTarjeta__h3_orange{
+		color: #fff;
+		background-color: #ffa500;
+		padding: 7px 20px;
+		border-radius: 5px;
+	}
+
 .perdidosTarjeta__subdata {
 	font-family: 'Arial';
 	font-style: normal;
-	font-weight: 700;
-	font-size: 12px;
-	line-height: 14px;
-	letter-spacing: 0.02em;
+	font-size: 16px;
 	color: #343a40;
+	text-align: center;
+	margin: 5px 0;
+}
+
+.perdidosTarjeta__redes {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 0 8px;
+	margin: 10px 0;
+}
+
+.perdidosTarjeta__redes > img {
+	width: 30px;
 }

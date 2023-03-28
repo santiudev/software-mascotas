@@ -26,6 +26,6 @@
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin: 0;
-	gap: 5rem 3rem;
+	gap: 50px 0;
 	padding-bottom: 2rem;
 }

@@ -1,10 +1,8 @@
-export default function SubData({ subtitle, data }) {
+export default function SubData({ className, subtitle, data }) {
 	return (
-		<div>
-			<span>
-				<b>{subtitle}:</b>
-			</span>
+		<p className={className}>
+			<b>{subtitle}:</b>
 			<span> {data}</span>
-		</div>
+		</p>
 	);
 }
