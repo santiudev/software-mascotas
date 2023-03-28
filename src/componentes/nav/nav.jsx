@@ -61,6 +61,6 @@ const Nav = () => {
 			{modal && <Formulario setModal={setModal} />}
 		</nav>
 	);
-}
+} 
 
 export default Nav;

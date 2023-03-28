@@ -24,3 +24,12 @@
 	background-color: #DE341D;
 	color: white
 }
+
+@media (max-width: 1024px) {
+
+	.btn {
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+	
+}

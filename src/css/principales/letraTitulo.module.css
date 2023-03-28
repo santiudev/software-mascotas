@@ -16,6 +16,7 @@
 	color: #DE341D;
 	-webkit-text-stroke: .1px #fff;
 	-moz-text-stroke: .1px #fff;
+	z-index: 1;
 }
 
 .letra-titulo--white{

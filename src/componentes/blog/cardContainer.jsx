@@ -1,4 +1,4 @@
-import styles from '../../css/blog/cardContainer.module.css';
+import styles from "../../css/blog/cardContainer.module.css";
 
 const Card = ({ id, img, consejo, titulo, descripcion, fecha }) => {
 	return (
