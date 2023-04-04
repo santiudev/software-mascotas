@@ -91,3 +91,6 @@
 .sobre-nosotros__section>div>p {
   font-size: 18px;
 }
+.sobre-nosotros__container h4{
+  color: rgba(222, 52, 29, 1);
+}

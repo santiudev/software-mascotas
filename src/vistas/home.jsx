@@ -50,6 +50,7 @@ const Home = () => {
           <LetraTitulo
             texto="Ayuda a reunir a las mascotas con sus familias"
             clase="letra-titulo--white"
+            
           />
           <LetraParrafo
             texto="Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -135,21 +136,21 @@ const Home = () => {
               );
             })
           }
+
+          <h4>Misión:</h4>
           <p>
-            Nuestra misión es ayudar a reunir a las mascotas perdidas con sus familias y fomentar
-            la tenencia responsable de animales. Queremos crear una comunidad solidaria y comprometida
-            con la protección de los animales, donde cada uno de nosotros pueda hacer su aporte para
-            lograr este objetivo.
+          En Patitas a Casa nos dedicamos a rescatar y proteger a los animales abandonados o perdidos, y promover la adopción responsable de mascotas. A través de nuestras redes sociales, difundimos información para que los dueños puedan encontrar a sus mascotas y también para fomentar la adopción. Además, trabajamos con refugios para ayudar a que los animales encuentren un hogar y colaboramos con ellos para mejorar las condiciones de vida de los animales en situación de abandono. Nuestro objetivo es lograr un mundo más justo para los animales y concienciar a la sociedad sobre la importancia de su cuidado y protección.
           </p>
+
+          <h4>Visión:</h4>
           <p>
-            En nuestra página , los usuarios pueden reportar a sus mascotas perdidas , buscar entre los animales
-            encontrados y contactar a las personas que los encontraron. De esta manera facilitamos y agilizamos la
-            búsqueda de mascotas y ayudamos a que puedan regresar a sus hogares.
-          </p>
-          <p>
-            En nuestro equipo nos guían valores como el compromiso, la empatía y la solidaridad. Creemos que cada
-            mascota perdida es un miembro de una familia que sufre su ausencia, y trabajamos con la convicción de
-            que podemos ayudar a que se reencuentren.
+          En Patitas a Casa trabajamos para construir una sociedad más empática y comprometida con
+          la protección de los animales. Queremos ser una organización referente en el rescate y 
+          protección de animales, y en la promoción de la adopción responsable. A través de nuestras 
+          acciones, buscamos crear conciencia en la sociedad sobre la importancia de cuidar a los animales
+          y contribuir a un cambio cultural que los considere seres sintientes y dignos de respeto. 
+          Aspiramos a un futuro donde los animales sean valorados y respetados por toda la sociedad y 
+          donde no haya animales en situación de abandono o maltrato.
           </p>
           </section>
         </article>

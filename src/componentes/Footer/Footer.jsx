@@ -13,7 +13,7 @@ export default function Footer() {
 				<img className={styles.footer__huellas} src={huellas} alt="huellas" />
 				<SectionOne
 					title="HO-PET"
-					parrafo="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+					parrafo="En Patitas a Casa, nos dedicamos a rescatar y proteger a los animales abandonados o perdidos, y promover la adopción responsable de mascotas. Somos una organización sin fines de lucro que utiliza las redes sociales para difundir información que ayude a los dueños a encontrar a sus mascotas perdidas, y a promover la adopción de animales en situación de abandono. Además, trabajamos con refugios para mejorar las condiciones de vida de los animales y ayudarlos a encontrar un hogar. Nuestra misión es construir una sociedad más empática y comprometida con la protección de los animales. ¡Únete a nuestra causa y ayúdanos a crear un mundo más justo para los animales!"
 				/>
 				<div className={styles.sectionTwo__container}>
 					<SectionTwo
