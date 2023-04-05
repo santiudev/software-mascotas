@@ -71,8 +71,8 @@ const Home = () => {
         </section>
       </header>
       <section className={styles["publicacion-destacada"]}>
-        <LetraTitulo texto="PUBLICACION DESTACADA" clase={"letra-titulo--red"} />
-        <h3>Cuando reporta una mascota perdida/encontrada, su publicación aparecerá aquí como publicación destacada.</h3>
+        <LetraTitulo texto="PUBLICACION RECIENTES" clase={"letra-titulo--red"} />
+        <h3>Cuando reporta una mascota perdida/encontrada, su publicación aparecerá aquí como publicación reciente.</h3>
         <TarjetaDestacadaContainer />
         <div className={styles["publicacion-destacada__buttons"]}>
           <BtnPrincipal texto="Encontrados"/>
