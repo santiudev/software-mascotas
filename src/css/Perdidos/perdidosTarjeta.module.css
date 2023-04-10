@@ -12,23 +12,35 @@
 	justify-content: center;
 	align-items: center;
 	width: 300px;
-	background: linear-gradient(180deg, #9a5d30 0%, #fafafa 100%);
+	background-color: white;
 	padding: 30px;
-	border: 1px solid #000;
-	border-radius: 10px;
-	box-shadow: 20px 20px 10px 0px #00000080;
+	border: 1px solid rgb(241, 230, 230);
+	border-radius: 2.5vmax;
 }
 
 .perdidosTarjeta__subdata_container {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 }
 
-.perdidosTarjeta__img:last-child {
+.perdidosTarjeta___img__info_container{
+	width: 45%;
+	position: relative;
+	display: flex;
+	top: 2%;
+	margin-inline: auto;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.perdidosTarjeta__img_info{
 	width: 25px;
-	position: absolute;
-	top: 15px;
-	right: 15px;
+	margin-inline: auto;
+	margin: 0;	/*en caso de que el navegador no soporte la opción*/
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .perdidosTarjeta__h3 {
@@ -46,4 +58,8 @@
 	line-height: 14px;
 	letter-spacing: 0.02em;
 	color: #343a40;
+}
+
+.perdidosTarjeta__subdata_container div{
+	margin-bottom: 2%;
 }
