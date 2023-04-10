@@ -20,7 +20,7 @@ section > * {
 
 .footer__huellas {
 	position: absolute;
-	top: -40px;
+	bottom: 25px;
 	width: 97%;
 }
 
@@ -28,4 +28,61 @@ section > * {
 	width: 30%;
 	display: flex;
 	justify-content: space-between;
+}
+
+
+/* Diseño responsive */
+
+@media (max-width: 320px) {
+
+	.footer__container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+@media (max-width: 375px) {
+
+	.footer__container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.footer__container {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+
+	.sectionTwo__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
+
+@media (max-width: 1024px) {
+
+	.footer__container {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+
+	.sectionTwo__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
 }

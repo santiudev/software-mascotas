@@ -57,3 +57,79 @@
   width: 30px;
   border-radius: 5px;
 }
+
+/* Diseño responsive */
+
+@media (max-width: 320px) {
+
+	.sectionThree__h3 {
+		margin-top: 10px;
+		line-height: 22px;
+	}
+
+	.sectionThree__form {
+		margin: 20px 0;
+	}
+
+	.sectionThree__form > input:first-child {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+
+	.sectionThree__form > input:last-child {
+		height: 38px;
+		font-size: 18px;
+	}
+
+}
+
+@media (max-width: 375px) {
+
+	.sectionThree__h3 {
+		margin-top: 10px;
+		line-height: 22px;
+	}
+
+	.sectionThree__form {
+		margin: 20px 0;
+	}
+
+	.sectionThree__form > input:first-child {
+		padding: 10px 38px;
+		font-size: 15px;
+	}
+
+	.sectionThree__form > input:last-child {
+		height: 38px;
+		font-size: 18px;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.sectionThree {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sectionThree__h3 {
+		margin-top: 10px;
+		line-height: 22px;
+	}
+
+	.sectionThree__form {
+		margin: 20px 0;
+	}
+
+	.sectionThree__form > input:first-child {
+		padding: 10px 38px;
+		font-size: 15px;
+	}
+
+	.sectionThree__form > input:last-child {
+		height: 38px;
+		font-size: 18px;
+	}
+
+}
