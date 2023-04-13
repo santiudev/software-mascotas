@@ -54,8 +54,8 @@
 }
 
 .sectionThree__redes > a > img {
-  width: 30px;
-  border-radius: 5px;
+	width: 30px;
+	border-radius: 10px;
 }
 
 /* Diseño responsive */
