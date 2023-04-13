@@ -1,4 +1,8 @@
 import styles from '../../css/adoptar/adoptarTarjeta.module.css';
+import shareIcon from '../../iconos/share-iconSubdata.png';
+import whatsApp from '../../iconos/whatsAppSubdata.png';
+import twitter from '../../iconos/twitterSubdata.png';
+import facebook from '../../iconos/facebookSubdata.png';
 
 const adoptarTarjeta = ({
 	img,
@@ -25,6 +29,28 @@ const adoptarTarjeta = ({
 				<p>
 					<b>Contacto: +{contacto}</b>
 				</p>
+				<div className={styles.adoptarTarjeta___img__info_container}>
+					<img
+						className={styles.adoptarTarjeta__img_info}
+						src={whatsApp}
+						alt="share-icon"
+					/>
+					<img
+						className={styles.adoptarTarjeta__img_info}
+						src={twitter}
+						alt="share-icon"
+					/>
+					<img
+						className={styles.adoptarTarjeta__img_info}
+						src={facebook}
+						alt="share-icon"
+					/>
+					<img
+						className={styles.adoptarTarjeta__img_info}
+						src={shareIcon}
+						alt="share-icon"
+					/>
+				</div>
 			</div>
 		</div>
 	);
