@@ -1,8 +1,9 @@
 .card {
   width: 220px;
   height: 220px;
-  padding: 10px;
-  background: linear-gradient(120deg, #9A5D30 16.69%, #FAFAFA 100%);
+  padding: 15px 15px 15px 45px;
+  /* background: linear-gradient(120deg, #de523f, #ffffff 100%); */
+  background-color: rgba(238, 238, 238, 0.73);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,11 +11,13 @@
   z-index: 1;
   transition: all 100ms ease-in-out;
   overflow: hidden;
+  color: #ffffff;
 }
 
 .card:hover {
   width: 500px;
   transition: all 100ms ease-in-out;
+  background-color: #c936237c;
 }
 
 .cardNoExtended {
@@ -60,6 +63,7 @@
   border-radius: 8px;
   color: #FAFAFA;
 }
+
 
 .cardExtended>ul {
   list-style: none;

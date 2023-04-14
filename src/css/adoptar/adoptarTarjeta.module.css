@@ -1,9 +1,9 @@
 .adoptarTarjeta {
-  width: 40%;
+  width: 45%;
   display: flex;
-  border: 1px solid #00000080;
+  border: 1px solid rgb(241, 230, 230);
   border-radius: 125px 10px 10px 125px;
-
+  background-color: white;
 }
 
 .adoptarTarjeta__img {
@@ -12,7 +12,9 @@
   align-items: center;
   border: 21px red;
   border-radius: 50% 0 0 50%;
-  background-color: #f2e2e2;
+  background-color: transparent/*#f2e2e2*/;
+  margin: 2%;
+  /*background-image: linear-gradient(to top,rgb(255, 255, 255) 0%, transparent 50%,transparent 100%);*/
 }
 
 .adoptarTarjeta__img>img {
@@ -25,10 +27,29 @@
 .adoptarTarjeta__description {
   padding-left: 20px;
   padding-right: 10px;
-  background-color: #f2e2e2;
-  background-image: url("../../iconos/paw.png");
+  /*background-color: white#f2e2e2*/;
+  /*background-image: linear-gradient(to bottom,white 50%, transparent 100%);*/
+  /*background-image: url("../../iconos/paw.png");
   background-size: 50px;
   background-position-x: 95%;
-  background-repeat: no-repeat;
-  border-radius: 0 10px 10px 0;
+  background-repeat: no-repeat;¨*/
+  /*border-radius: 0 10px 10px 0;*/
+  padding: 1.5%;
+  margin: 2%;
+}
+
+.adoptarTarjeta___img__info_container{
+  width: 45%;
+	position: relative;
+	display: flex;
+	top: 0%;
+
+}
+
+.adoptarTarjeta__img_info{
+	width: 25px;
+	margin-inline: auto;
+	margin: 0;	/*en caso de que el navegador no soporte la opción*/
+	margin-left: auto;
+	margin-right: auto;
 }
