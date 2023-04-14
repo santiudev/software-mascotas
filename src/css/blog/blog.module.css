@@ -9,7 +9,7 @@
 .blog__card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 30px;
-  gap: 40px 0;
+  padding: 30px;
+  gap: 40px 30px;
+  justify-content: center;
 }
