@@ -5,13 +5,14 @@
 
 
 .letra-titulo {
-	font-family: letra-titulo /*'Roboto',sans-serif*/;
+	font-family: 'Roboto',sans-serif/*letra-titulo*/ /*'Roboto',sans-serif*/;
 	font-size: 2.25rem;
 	margin: 0;
 	padding-bottom: .8rem;
 	min-width: 11rem;
 	user-select: none;
 }
+
 
 .letra-titulo--red{
 	color: #DE341D;
@@ -26,7 +27,7 @@
                .8px -.8px 0 #000, 
                -.8px .8px 0 #000, 
                .8px .8px 0 #000;
-	-webkit-text-stroke: .4px black;
-	-moz-text-stroke: .4px black;
+	/*-webkit-text-stroke: .4px black;
+	-moz-text-stroke: .4px black;*/
 	font-size: 3.75rem;
 }

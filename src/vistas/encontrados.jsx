@@ -4,6 +4,7 @@ import Footer from '../../src/componentes/Footer/Footer';
 import styles from '../css/Perdidos/perdidos.module.css';
 import PerdidosTarjeta from '../componentes/Perdidos/perdidosTarjeta';
 import LetraTitulo from '../componentes/principales/LetraTitulo';
+import { LetraSubtitulo } from '../componentes/principales/LetraTitulo';
 import { Data } from '../Data_HO-PET';
 import Paginacion from '../componentes/Perdidos/paginacion';
 import LetraParrafo from '../componentes/principales/letraParrafo';
@@ -16,7 +17,11 @@ const Encontrados = () => {
 				<section className={styles['texto-container']}>
 					<article className={styles['texto-container__titulo']}>
 						<LetraTitulo
-							texto="Mascotas Perdidas - devuelve a tu amigo peludo a casa"
+							texto="Mascotas Perdidas"
+							clase="letra-titulo--red"
+						/>
+						<LetraSubtitulo
+							texto="devuelve a tu amigo peludo a casa"
 							clase="letra-titulo--red"
 						/>
 					</article>

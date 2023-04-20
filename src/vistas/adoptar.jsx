@@ -8,6 +8,7 @@ import Paginacion from "../componentes/Perdidos/paginacion";
 import AdoptarTarjeta from "../componentes/adoptar/adoptarTarjeta";
 import Filtrar from "../componentes/adoptar/filtrar.module";
 import LetraTitulo from "../componentes/principales/LetraTitulo";
+import { LetraSubtitulo } from "../componentes/principales/LetraTitulo";
 import LetraParrafo from "../componentes/principales/letraParrafo";
 
 // Estilos
@@ -25,7 +26,11 @@ const adoptar = () => {
         <section className={styles_perdidos["texto-container"]}>
           <article className={styles_perdidos["texto-container__titulo"]}>
             <LetraTitulo
-              texto="Mascotas en adopcion - Encuentra a tu nuevo mejor amigo"
+              texto="Mascotas en Adopción"
+              clase="letra-titulo--red"
+            />
+            <LetraSubtitulo
+              texto="Encuentra a tu nuevo mejor amigo"
               clase="letra-titulo--red"
             />
           </article>
