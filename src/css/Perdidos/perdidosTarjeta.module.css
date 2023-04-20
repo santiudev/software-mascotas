@@ -41,6 +41,7 @@
 	margin: 0;	/*en caso de que el navegador no soporte la opción*/
 	margin-left: auto;
 	margin-right: auto;
+	cursor: pointer;
 }
 
 .perdidosTarjeta__h3 {
