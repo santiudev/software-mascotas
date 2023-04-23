@@ -38,7 +38,9 @@ const Nav = () => {
 
 	return (
 		<nav className={styles.nav}>
-			<Logo className={styles.logo} />
+			<NavLink to="/" className={styles["nav__logo-contenedor"]}>
+				<Logo className={styles.logo} />
+			</NavLink>
 			<div className={styles.nav__contenedor}>
 				<div className={styles['nav__contenedor-botones']}>
 					{botones.map((btn, indice) => {

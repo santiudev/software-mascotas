@@ -8,7 +8,11 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 	height: 5rem;
 	/* width: 100%; */
-	position: relative;
+	z-index: -1;
+}
+
+.nav__logo-contenedor {
+	display: flex;
 }
 
 .logo {
@@ -49,20 +53,6 @@
 	/* padding: 20px; */
 	/* margin: 0; */
 	/* padding-bottom: .6rem; */
-}
-
-.navbar__burger {
-	width: 40px;
-	height: 40px;
-	background: transparent;
-	border: none;
-	color: inherit;
-	display: none;
-
-	/* prueba */
-	top: 50%;
-	transform: translateY(-30%);
-	position: absolute;
 }
 
 
@@ -124,37 +114,6 @@
 	.nav__contenedor-elementos {
 		display: none;
 	}
-
-	.navbar__burger {
-			display: contents;
-	}
-
-	.burger-bar,
-	.burger-bar::before,
-	.burger-bar::after {
-			display: block;
-			width: 40px;
-			height: 3px;
-			position: relative;
-			border-radius: 3px;
-			background: rgba(0, 0, 0, 0.75);
-			z-index: 1000;
-	}
-
-	.burger-bar::before,
-	.burger-bar::after {
-			content: "";
-			position: absolute;
-			left: 0;
-	}
-
-	.burger-bar::before {
-			transform: translateY(-12px);
-	}
-
-	.burger-bar::after {
-			transform: translateY(12px);
-	}
 }
 
 @media (max-width: 375px) {
@@ -171,51 +130,14 @@
 		width: 100%;
 		height: calc(100vh - 70px);
 	}
-
 	.show_nav .nav__contenedor-botones{
 			width: 100vw;
 			right: 0;
 			visibility: visible;
 	}
-
-	.navbar__burger {
-			display: block;
-			z-index: 1000;
-			top: 2rem;
-			right: 3rem;
-	}
-
-	.burger-bar,
-	.burger-bar::before,
-	.burger-bar::after {
-			display: block;
-			width: 40px;
-			height: 3px;
-			position: relative;
-			border-radius: 3px;
-			background: rgba(0, 0, 0, 0.75);
-			z-index: 1000;
-	}
-
-	.burger-bar::before,
-	.burger-bar::after {
-			content: "";
-			position: absolute;
-			left: 0;
-	}
-
-	.burger-bar::before {
-			transform: translateY(-12px);
-	}
-
-	.burger-bar::after {
-			transform: translateY(12px);
-	}
-
 }
 
 @media (max-width: 320px) {
-
 	.nav__contenedor-botones {
 			flex-direction: column;
 			justify-content: center;
@@ -232,47 +154,9 @@
 			width: 100%;
 			height: calc(100vh - 77px);
 	}
-
 	.show_nav .nav__contenedor-botones{
 			width: 100vw;
 			right: 0;
 			visibility: visible;
-	}
-
-	.navbar__burger {
-			display: block;
-			top: 2rem;
-			right: 3rem;
-	}
-
-	.navbar__burger:hover {
-			cursor: pointer;
-	}
-
-	.burger-bar,
-	.burger-bar::before,
-	.burger-bar::after {
-			display: block;
-			width: 40px;
-			height: 3px;
-			position: relative;
-			border-radius: 3px;
-			background: rgba(0, 0, 0, 0.75);
-			z-index: 1000;
-	}
-
-	.burger-bar::before,
-	.burger-bar::after {
-			content: "";
-			position: absolute;
-			left: 0;
-	}
-
-	.burger-bar::before {
-			transform: translateY(-12px);
-	}
-
-	.burger-bar::after {
-			transform: translateY(12px);
 	}
 } 
