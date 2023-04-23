@@ -3,7 +3,10 @@
 	display: flex;
 	align-items: center;
 	gap: .3rem;
-	padding: .8rem 10%;
+	/* El padding con esas medidas bugea el flexbox y lo pisa */
+	/* padding: .8rem 10%;*/
+	/* Este padding funciona bien con el flexbox y el responsive */
+	padding: 13px 19px;
 	border-radius: .8rem;
 	cursor: pointer;
 	transition: all .3s ease;
@@ -24,4 +27,21 @@
 
 .btn__img {
 	height: 1.25rem;
+}
+
+@media (max-width: 1400px){
+	.btn {
+		padding: 12px 18px;
+	}
+	.btn__text {
+		font-size: 15px;
+	}
+	.btn__img {
+		height: 18px;
+	}
+}
+@media (max-width: 768px){
+	.btn {
+		border: 1px solid #FFF;
+	}
 }

@@ -6,6 +6,8 @@
   background-repeat: no-repeat;
   display: grid;
   grid-template-rows: 6rem 1fr;
+  position: relative;
+  z-index: 1;
 }
 
 .header__buttons {
@@ -21,6 +23,7 @@
   margin: 0;
   width: 50%;
   margin-left: 1rem;
+  z-index: -10;
 }
 
 .header__buttons {
