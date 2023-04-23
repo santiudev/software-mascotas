@@ -15,10 +15,9 @@ const Navbar = () => {
             <ul className={`${styles.burger_menu__items} ${isOpen && styles.open}`}>
               {botones.map((btn, indice) => {
 					      return (
-						      <li>
+						      <li key={indice}>
                     <BurgerItem
                       to={btn.path}
-                      key={indice}
                       texto={btn.texto}
                     >
 						        </BurgerItem>
