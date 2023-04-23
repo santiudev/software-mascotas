@@ -11,12 +11,16 @@ import Refugios from "./vistas/refugios"
 import NotFound from "./vistas/notFound.jsx"
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Nav from "./componentes/nav/nav";
 
 //Routas de la app. Vincular las rutas con el componente nav
 function App() {
   return (
 		<div className="App">
 			<BrowserRouter>
+				<div className="frente">
+					<Nav />
+				</div>
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="/perdidos" element={<Perdidos />} />

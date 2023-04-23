@@ -35,7 +35,7 @@ const servicios = [
 const Refugios = () =>{
   return(
     <>
-      <Nav/>
+      {/* <Nav/> */}
       <img src={headerBar} className={styles.headerImg} alt="refugio pets bar" />
       <RefugiosPetsContainer />
       <main className={styles.main}>

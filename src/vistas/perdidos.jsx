@@ -11,7 +11,7 @@ import LetraParrafo from '../componentes/principales/letraParrafo';
 const Perdidos = () => {
 	return (
 		<>
-			<Nav />
+			{/* <Nav /> */}
 			<div className={styles.perdidos}>
 				<section className={styles['texto-container']}>
 					<article className={styles['texto-container__titulo']}>

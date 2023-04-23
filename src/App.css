@@ -7,3 +7,8 @@ body {
 .App {
 	height: 100vh;
 }
+
+.frente {
+	position: relative;
+	z-index: 100;
+}

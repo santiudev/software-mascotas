@@ -9,7 +9,7 @@ import BtnPrincipal from '../componentes/principales/btnPrincipal';
 const Contacto = () => {
   return (
     <div className={styles["contenedor-principal"]}>
-      <Nav />
+      {/* <Nav /> */}
       <div className={styles.contacto}>
         <div className={styles["contacto__container"]}>
           <LetraTitulo 

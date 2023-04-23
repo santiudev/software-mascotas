@@ -18,7 +18,6 @@ export default function Blogs({ imgP, tituloP }) {
 
 	return (
 		<>
-			<Nav />
 			<div className={styles.blogs__container}>
 				<BlogsPortada
 					consejos={true}

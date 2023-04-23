@@ -8,7 +8,6 @@ import Paginacion from '../componentes/Perdidos/paginacion';
 const Blog = () => {
 	return (
 		<>
-			<Nav />
 			<div className={styles.blog__container}>
 				<LetraTitulo
 					className={styles.blog__letraTitle}

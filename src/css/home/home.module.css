@@ -1,13 +1,13 @@
 .header {
   height: 100vh;
+  display: grid;
+  grid-template-rows: 5rem 1fr;
   background-image: url(../../iconos/imagenes\ recursos/img-home.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-rows: 6rem 1fr;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .header__buttons {
@@ -16,14 +16,14 @@
 }
 
 .header__section {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
   margin: 0;
   width: 50%;
-  margin-left: 1rem;
-  z-index: -10;
+  padding-left: 60px;
 }
 
 .header__buttons {

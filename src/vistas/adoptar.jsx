@@ -21,7 +21,6 @@ import { Data } from "../Data_HO-PET";
 const adoptar = () => {
   return (
     <>
-      <Nav />
       <div className={styles.adoptar__container}>
         <section className={styles_perdidos["texto-container"]}>
           <article className={styles_perdidos["texto-container__titulo"]}>

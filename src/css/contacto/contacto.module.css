@@ -1,7 +1,7 @@
 .contenedor-principal{
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 6rem 1.7fr 1fr;
+  /* grid-template-rows: 6rem 1.7fr 1fr; */
 }
 
 .contacto{
@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .contacto__container{

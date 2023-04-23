@@ -45,7 +45,6 @@ const Home = () => {
   return (
     <>
       <header className={styles.header}>
-        <Nav />
         <section className={styles.header__section}>
           <LetraTitulo
             texto="Ayuda a reunir a las mascotas con sus familias"
