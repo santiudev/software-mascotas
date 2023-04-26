@@ -1,34 +1,101 @@
 .header {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 5rem 1fr;
-  background-image: url(../../iconos/imagenes\ recursos/img-home.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  /* z-index: 1; */
-}
-
-.header__buttons {
   display: flex;
-  justify-content: space-evenly
+  height: 92vh;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+}
+.header::before {
+  background-image: url(../../iconos/imagenes\ recursos/img-home.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  background-color: green;
 }
 
 .header__section {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 0;
-  width: 50%;
-  padding-left: 60px;
+  padding-left: 100px;
+  position: relative;
+}
+
+.header__logo {
+  width: 600px;
+}
+
+.header__title {
+  font-size: 40px;
+  color: #FFF;
+	text-shadow: -.8px -.8px 0 #000, 
+               .8px -.8px 0 #000, 
+               -.8px .8px 0 #000, 
+               .8px .8px 0 #000;
 }
 
 .header__buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1250px){
+  .header {
+    justify-content: center;
+  }
+  .header__section {
+    padding: 0;
+  }
+}
+@media (max-width: 1000px){
+  .header {
+    justify-content: center;
+  }
+  .header__section {
+    align-items: center;
+  }
+  .header__logo {
+    width: 500px;
+  }
+  .header__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px){
+  .header__logo {
+    width: 400px;
+  }
+  .header__title {
+    font-size: 34px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px){
+  .header__section {
+    padding: 0 10px;
+  }
+  .header__logo {
+    width: 100%;
+    max-width: 360px;
+    min-width: 200px;
+  }
+  .header__title {
+    font-size: 30px;
+  }
+  .header__buttons {
+    gap: 40px;
+  }
 }
 
 .adopciones {

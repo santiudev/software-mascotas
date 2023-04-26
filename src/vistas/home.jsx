@@ -21,6 +21,7 @@ import BlogContainer from '../contenedores/home/BlogContainer';
 
 // Imágenes
 import imgSobreNosotros from '../iconos/imagenes recursos/img-sobreNosotros.png';
+import { LogoWhite } from "../iconos/svg/icons_svg";
 
 const listaHistoria = [
 	`Esta idea surgió de un punto de vista de querer ayudar a esas personas que quieren
@@ -45,17 +46,8 @@ const Home = () => {
 		<>
 			<header className={styles.header}>
 				<section className={styles.header__section}>
-					<LetraTitulo
-						texto="Ayuda a reunir a las mascotas con sus familias"
-						clase="letra-titulo--white"
-					/>
-					<LetraParrafo
-						texto="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Enim sit qui, repudiandae aperiam laborum a quisquam in fugiat
-              corrupti tenetur reprehenderit, harum, tempora pariatur expedita 
-              excepturi saepe fugit eius nulla."
-						clase="letra-parrafo--white"
-					/>
+					<LogoWhite className={styles.header__logo} />
+					<p className={styles.header__title}>"Rescatando patitas, salvando corazones"</p>
 					<div className={styles.header__buttons}>
 						<BtnPrincipal texto="Reportar" setModal={setModal} />
 						<BtnPrincipal texto="Adoptar" />
