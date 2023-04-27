@@ -19,7 +19,7 @@ export default function SectionThree () {
 				<a href="/">
 					<img src={twitter_icon} alt="twitter-logo" />
 				</a>
-				<a href="/">
+				<a href="https://www.instagram.com/patitasacasa_arg/" target="_blank" rel="noopener noreferrer">
 					<img src={ig_icon} alt="ig-logo" />
 				</a>
 				<a href="/">
