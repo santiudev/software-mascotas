@@ -54,13 +54,13 @@ const Home = () => {
 					</div>
 				</section>
 			</header>
-			
+
 			<section className={styles['publicacion-destacada']}>
 				<LetraTitulo
 					texto="PUBLICACION RECIENTES"
 					clase={'letra-titulo--red'}
 				/>
-				<h3>
+				<h3 className={styles["publicacion-destaca__sub-titulo"]}>
 					Cuando reporta una mascota perdida/encontrada, su publicación
 					aparecerá aquí como publicación reciente.
 				</h3>

@@ -90,3 +90,17 @@
 .arrow {
   rotate: 90deg;
 }
+
+@media (max-width: 500px){
+  .card {
+    padding: 15px 15px 15px 70px;
+  }
+  .card:hover {
+    width: 340px;
+    padding: 30px 10px 30px 15px;
+  }
+  .cardNoExtended img {
+    height: 140px;
+    width: 140px;
+  }
+}

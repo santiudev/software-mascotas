@@ -121,6 +121,10 @@
   align-items: center;
 }
 
+.publicacion-destaca__sub-titulo {
+  padding: 0 20px;
+}
+
 .publicacion-destacada__buttons {
   display: flex;
   justify-content: space-evenly;
