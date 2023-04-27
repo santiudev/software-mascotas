@@ -119,16 +119,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.6rem;
 }
 
 .publicacion-destacada__buttons {
   display: flex;
-  width: 50%;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding-bottom: 1rem;
+  gap: 6rem;
+  padding: 3rem 0 0.2rem;
 }
 
 .publicacion-destacada__buttons>button {

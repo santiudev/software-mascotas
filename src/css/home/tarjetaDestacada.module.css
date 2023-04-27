@@ -9,14 +9,14 @@
   align-items: center;
   border-radius: 8px;
   z-index: 1;
-  transition: all 100ms ease-in-out;
+  transition: all 400ms ease-in-out;
   overflow: hidden;
   color: #ffffff;
 }
 
 .card:hover {
-  width: 500px;
-  transition: all 100ms ease-in-out;
+  width: 400px;
+  transition: all 400ms ease-in-out;
   background-color: #c936237c;
 }
 
@@ -57,7 +57,8 @@
 }
 
 .cardExtended>h3 {
-  padding: 3%;
+  padding: 2px 0px;
+  font-size: 16px;
   text-align: center;
   background-color: #de523f;
   border-radius: 8px;

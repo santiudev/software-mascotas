@@ -54,6 +54,7 @@ const Home = () => {
 					</div>
 				</section>
 			</header>
+			
 			<section className={styles['publicacion-destacada']}>
 				<LetraTitulo
 					texto="PUBLICACION RECIENTES"
