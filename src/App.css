@@ -8,6 +8,10 @@ body {
 	height: 100vh;
 }
 
+a {
+	text-decoration: none;
+}
+
 .frente {
 	position: relative;
 	z-index: 100;

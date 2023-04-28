@@ -22,6 +22,7 @@ import BlogContainer from '../contenedores/home/BlogContainer';
 // Imágenes
 import imgSobreNosotros from '../iconos/imagenes recursos/img-sobreNosotros.png';
 import { LogoWhite } from "../iconos/svg/icons_svg";
+import { Link } from "react-router-dom";
 
 const listaHistoria = [
 	`Esta idea surgió de un punto de vista de querer ayudar a esas personas que quieren
@@ -50,7 +51,9 @@ const Home = () => {
 					<p className={styles.header__title}>"Rescatando patitas, salvando corazones"</p>
 					<div className={styles.header__buttons}>
 						<BtnPrincipal texto="Reportar" setModal={setModal} />
-						<BtnPrincipal texto="Adoptar" />
+						<Link to="/adoptar">
+							<BtnPrincipal texto="Adoptar" />
+						</Link>
 					</div>
 				</section>
 			</header>
