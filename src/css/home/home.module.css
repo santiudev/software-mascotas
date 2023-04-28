@@ -62,6 +62,9 @@
   .header {
     justify-content: center;
   }
+  .header::before {
+    background-position: 50%;
+  }
   .header__section {
     align-items: center;
   }
