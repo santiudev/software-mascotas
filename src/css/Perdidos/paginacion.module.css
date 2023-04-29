@@ -22,3 +22,15 @@
 .paginacion__a {
   color: #000;
 }
+
+@media screen and (max-width: 530px) {
+  .paginacion__container {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .paginacion__container {
+    gap: 1rem;
+  }
+}

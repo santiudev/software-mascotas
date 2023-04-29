@@ -21,8 +21,9 @@ section>* {
 
 .footer__huellas {
 	position: absolute;
+	left: 0;
 	bottom: 25px;
-	width: 97%;
+	width: 100%;
 }
 
 .sectionTwo__container {
