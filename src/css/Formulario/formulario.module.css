@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 450px;
-  height: 600px;
+  height: auto;
   transition: height .5s;
 }
 
@@ -35,13 +35,14 @@
 }
 
 .form_inputs {
-  height: 130px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   margin: 20px 10px;
   transition: height .5s;
+  gap: 10px;
 }
 
 .form_inputs>div {
@@ -68,7 +69,7 @@
 }
 
 .form_inputs > input {
-  width: 400px;
+  width: auto;
 }
 
 .form_inputs input::placeholder {
@@ -206,7 +207,7 @@
 
 .pet,
 .petSelected {
-  padding: 10px 0;
+  padding: 9px 0;
   cursor: pointer;
   transition: all 200ms ease;
   font-size: 18px;
@@ -229,4 +230,46 @@
 .petSelected {
   outline: 2px solid #DE341D;
   background-color: #DE341D;
+}
+
+@media (max-width: 600px){
+  .form button.cancelButton>img {
+    height: 50%;
+  }
+  .formContainer {
+    width: 390px;
+  }
+  .form_inputs input  {
+    padding: 5px 0;
+  }
+  .form img {
+    width: 16%;
+    height: 16%;
+  }
+  .pet,
+  .petSelected {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 450px){
+  .form button.cancelButton>img {
+    height: 40%;
+  }
+  .form_inputs {
+    display: block;
+  }
+  .form_inputs>div {
+    flex-direction: column;
+  }
+  .form_inputs input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .formContainer {
+    width: 340px;
+  }
+  .pet,
+  .petSelected {
+    padding: 17px 0;
+  }
 }

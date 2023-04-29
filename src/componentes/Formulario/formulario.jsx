@@ -29,7 +29,7 @@ const formulario = ({ setModal }) => {
 	};
 
 	return (
-		<div className={styles.formContainer} style={petType ? {height: '600px'} : {height: '550px'}}>
+		<div className={styles.formContainer}>
 			<form
 				action="POST"
 				onSubmit={handleSubmit}
@@ -70,7 +70,7 @@ const formulario = ({ setModal }) => {
 							onMouseLeave={() => setUploadImgHover(false)}
 						/>
 					</div>
-					<section className={styles.form_inputs} style={petType ? {height: '130px'} : {height: '80px'}}>
+					<section className={styles.form_inputs}>
 						{ petType ? <input type="text" name="name" placeholder="Nombre" /> : '' }
 						<div>
 							<input type="text" name="size" placeholder="Tamaño" />
