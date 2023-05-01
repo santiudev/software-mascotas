@@ -17,7 +17,14 @@
 .card:hover {
   width: 400px;
   transition: all 400ms ease-in-out;
-  background-color: #c936237c;
+  background-color: #de523f;
+}
+
+  .card:hover h3{
+  font-size: 23px;
+}
+.card:hover p{
+  font-size: 25px;
 }
 
 .cardNoExtended {
