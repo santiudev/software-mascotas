@@ -12,6 +12,7 @@ import NotFound from "./vistas/notFound.jsx"
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from "./componentes/nav/nav";
+import Footer from "./componentes/Footer/Footer";
 
 //Routas de la app. Vincular las rutas con el componente nav
 function App() {
@@ -32,6 +33,7 @@ function App() {
 					<Route exact path="/refugios" element={<Refugios />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 		</div>
 	);

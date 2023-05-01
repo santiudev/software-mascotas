@@ -58,7 +58,6 @@ const adoptar = () => {
           <Paginacion enlaces={["", "", "", "", ""]} />
         </section>
       </div>
-      <Footer />
     </>
   );
 };

@@ -35,7 +35,6 @@ const servicios = [
 const Refugios = () =>{
   return(
     <>
-      {/* <Nav/> */}
       <img src={headerBar} className={styles.headerImg} alt="refugio pets bar" />
       <RefugiosPetsContainer />
       <main className={styles.main}>
@@ -80,7 +79,6 @@ const Refugios = () =>{
           }
         </section>
       </main>
-      <Footer />
     </>
   )
 }

@@ -7,7 +7,7 @@
 }
 
 .servicio > img{
-  max-width: 9.375rem;
+  max-width: 8rem;
 }
 
 .servicio > p{
@@ -15,4 +15,15 @@
   text-align: center;
   margin: 0;
   font-weight: bold;
+}
+
+@media (max-width: 1000px){
+  .servicio > img {
+    max-width: 6rem;
+  }
+}
+@media (max-width: 600px){
+  .servicio > img {
+    max-width: 5rem;
+  }
 }

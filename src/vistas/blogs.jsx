@@ -74,7 +74,6 @@ export default function Blogs({ imgP, tituloP }) {
 					<PostsRelacionados />
 				</div>
 			</div>
-			<Footer />
 		</>
 	);
 }

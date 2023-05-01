@@ -61,7 +61,6 @@ const Encontrados = () => {
 				</section>
 				<Paginacion enlaces={['', '', '', '', '']} />
 			</div>
-			<Footer />
 		</>
 	);
 };

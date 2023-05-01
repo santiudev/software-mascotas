@@ -65,7 +65,6 @@ const Contacto = () => {
 					<BtnPrincipal texto="Enviar" />
 				</div>
 			</form>
-			<Footer />
 		</div>
 	);
 };

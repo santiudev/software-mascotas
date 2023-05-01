@@ -10,9 +10,8 @@ const Blog = () => {
 		<>
 			<div className={styles.blog__container}>
 				<LetraTitulo
-					className={styles.blog__letraTitle}
 					texto="Blog"
-					clase="letra-titulo--red"
+					clase="letra-titulo--red--mobile"
 				/>
 				<div className={styles.blog__card}>
 					<Card
@@ -121,7 +120,6 @@ const Blog = () => {
 				</div>
 				<Paginacion enlaces={['', '', '', '', '']} />
 			</div>
-			<Footer />
 		</>
 	);
 };

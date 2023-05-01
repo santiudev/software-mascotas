@@ -9,6 +9,7 @@
 	color: #000;
 	text-decoration: none;
 	transition: transform .5s;
+	margin-top: 40px;
 }
 
 .cardContainer:hover {
@@ -62,4 +63,11 @@
 	font-weight: 400;
 	color: rgba(0, 0, 0, 0.5);
   font-size: 12px;
+}
+
+@media (max-width: 960px){
+	.cardContainer {
+		width: 300px;
+		height: 420px;
+	}
 }

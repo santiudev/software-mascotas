@@ -180,7 +180,6 @@ const Home = () => {
           />
         </article> */}
 			</section>
-			<Footer />
 
 			{modal && <Formulario setModal={setModal} />}
 		</>
