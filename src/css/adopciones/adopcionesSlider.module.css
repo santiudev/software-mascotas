@@ -83,12 +83,22 @@
 
 @media (max-width: 1000px){
   .carousel {
+    padding: 60px 0px;
     width: 400px;
-    padding: 60px 0;
   }
   .carousel-item {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+  }
+}
+@media (max-width: 500px){
+  .carousel {
+    width: 340px;
+  }
+}
+@media (max-width: 400px){
+  .carousel {
+    width: 300px;
   }
 }
