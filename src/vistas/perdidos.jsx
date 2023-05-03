@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 import Nav from '../componentes/nav/nav';
 import Footer from '../../src/componentes/Footer/Footer';
 import styles from '../css/Perdidos/perdidos.module.css';
@@ -15,7 +15,7 @@ const Perdidos = () => {
 				<section className={styles['texto-container']}>
 					<article className={styles['texto-container__titulo']}>
 						<LetraTitulo
-							texto="Mascotas perdidas"
+							texto="Mascotas Perdidas"
 							clase="letra-titulo--red"
 						/>
 						<LetraSubtitulo
@@ -25,10 +25,7 @@ const Perdidos = () => {
 					</article>
 					<article className={styles['texto-container__subtitulo']}>
 						<LetraParrafo
-							texto="“Aquí podrás encontrar información sobre mascotas perdidas y colaborar
-						en su búsqueda. Si tienes información sobre alguna mascota perdida o has
-						encontrado una, por favor, comparte la información aquí para ayudar a
-						reunir a la mascota con su dueño.”"
+							texto="“Encuentra información sobre mascotas perdidas y colabora en su búsqueda. Ayuda a reunir a las mascotas con sus dueños compartiendo información aquí.”"
 							clase="letra-parrafo--black"
 						/>
 					</article>

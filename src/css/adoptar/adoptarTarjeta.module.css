@@ -15,7 +15,6 @@
   border-radius: 50% 0 0 50%;
   background-color: transparent/*#f2e2e2*/;
   margin: 2%;
-  /*background-image: linear-gradient(to top,rgb(255, 255, 255) 0%, transparent 50%,transparent 100%);*/
 }
 
 .adoptarTarjeta__img>img {
@@ -34,7 +33,6 @@
   padding-right: 10px;
   padding: 1.5%;
   margin: 2%;
-  /*border: 1px solid violet;*/
 }
 
 .adoptarTarjeta___img__info_container{
@@ -48,7 +46,7 @@
 .adoptarTarjeta__img_info{
 	width: 25px;
 	margin-inline: auto;
-	margin: 0;	/*en caso de que el navegador no soporte la opción*/
+	margin: 0;
 	margin-left: auto;
 	margin-right: auto;
   cursor: pointer;
@@ -72,7 +70,6 @@
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(241, 230, 230);
-    /*border-radius: 125px 125px 10px 10px;*/
     border-radius: 7%;
     background-color: white;
   }
@@ -87,7 +84,6 @@
   .adoptarTarjeta__description {
     padding: 2%;
     margin: 5%;
-    /*border: 1px solid violet;*/
     display: grid;
     place-items: center;
   }

@@ -35,7 +35,7 @@ const adoptar = () => {
           </article>
           <article className={styles_perdidos["texto-container__subtitulo"]}>
             <LetraParrafo
-              texto="“Encuentra a tu compañero fiel en nuestra lista de mascotas en adopción. Tenemos variedad de mascotas en busca de un hogar amoroso. Adoptar es una gran responsabilidad pero también una gran recompensa. ¡Haz feliz a una mascota adoptando hoy!”"
+              texto="“Encuentra tu compañero fiel en nuestra lista de mascotas en adopción. Adopta hoy y haz feliz a una mascota.”"
               clase="letra-parrafo--black"
             />
           </article>

@@ -14,9 +14,16 @@
 }
 
 .letra-parrafo--black{
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: lighter;
 	color: #343a40;
   text-align: center;
+}
+
+@media screen and (max-width:500px) {
+  .letra-parrafo--black{
+    text-align: justify;
+    font-size: clamp(12px,4.5vw,30px);
+  }
 }

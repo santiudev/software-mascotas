@@ -16,7 +16,7 @@ const Encontrados = () => {
 				<section className={styles['texto-container']}>
 					<article className={styles['texto-container__titulo']}>
 						<LetraTitulo
-							texto="Mascotas Perdidas"
+							texto="Mascotas Encontradas"
 							clase="letra-titulo--red"
 						/>
 						<LetraSubtitulo
@@ -26,7 +26,7 @@ const Encontrados = () => {
 					</article>
 					<article className={styles['texto-container__subtitulo']}>
 						<LetraParrafo
-							texto="“Aquí podrás encontrar las mascotas que han sido encontradas y que buscan a su dueño. Si encuentras a tu mascota entre las publicadas aquí, no dudes en ponerte en contacto con el número que aparece en el afiche para que puedan ayudarte a reunirse.”"
+							texto="“Mascotas encontradas en busca de su dueño. Contacta al número en el afiche para reunirlas.”"
 							clase="letra-parrafo--black"
 						/>
 					</article>

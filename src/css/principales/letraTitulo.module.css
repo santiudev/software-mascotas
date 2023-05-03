@@ -34,7 +34,11 @@
                .8px -.8px 0 #000, 
                -.8px .8px 0 #000, 
                .8px .8px 0 #000;
-	/*-webkit-text-stroke: .4px black;
-	-moz-text-stroke: .4px black;*/
 	font-size: 3.75rem;
+}
+
+@media screen and (max-width:500px) {
+	.letra-titulo--red{
+    font-size: clamp(30px,5vw,50px);
+  }
 }
