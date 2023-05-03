@@ -29,6 +29,7 @@ section>* {
 .sectionTwo__container {
 	display: flex;
 	justify-content: space-between;
+	gap: 30px;
 }
 
 
@@ -94,5 +95,11 @@ section>* {
 		width: 100%;
 		justify-content: space-around;
 		margin: 50px 0;
+	}
+}
+
+@media (max-width: 550px){
+	.sectionTwo__container {
+		flex-direction: column;
 	}
 }
