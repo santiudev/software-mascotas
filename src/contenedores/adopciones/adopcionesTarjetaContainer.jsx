@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Tarjeta de cada mascota
 import AdopcionesTarjeta from '../../componentes/adopciones/adopcionesTarjeta';
@@ -50,30 +50,49 @@ const CarouselItem = ({ pets }) => {
 };
 
 const Carousel = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+  useEffect(() => {
+    const media = window.matchMedia('(min-width: 1000px)');
+    const listener = () => setIsDesktop(media.matches);
+    listener();
+    window.addEventListener('resize', listener);
+
+    return () => window.removeEventListener('resize', listener);
+  }, [isDesktop]);
+
+
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const dataHoPet = useDataHoPet().slice(0, 6)
+  const dataHoPet = useDataHoPet().slice(0, 12)
+  const numSlides = isDesktop ? 6 : 2;
+  const numTotalSlides = Math.ceil(dataHoPet.length / numSlides);
   
   const [activeSlide, setActiveSlide] = useState(0);
 
   const renderCarouselItems = () => {
     const items = [];
-    for (let i = 0; i < dataHoPet.length; i += 2) {
-      const pet1 = dataHoPet[i];
-      const pet2 = dataHoPet[i + 1];
-
-      const item = <CarouselItem key={i} pets={[pet1, pet2]} />;
-
+  
+    for (let i = 0; i < dataHoPet.length; i += numSlides) { // Utilizamos numSlides aquí
+      const pets = dataHoPet.slice(i, i + numSlides);
+      const item = <CarouselItem key={i} pets={pets} />;
       items.push(item);
     }
     return items;
   };
 
   const settings = {
+    // dots: true,
+    // infinite: true,
+    // speed: 500,
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 2000,
+    // pauseOnHover: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     beforeChange: (current, next) => setActiveSlide(next)
@@ -84,15 +103,15 @@ const Carousel = () => {
       <div className={sliderStyles.carousel}>
         <Slider {...settings}>{renderCarouselItems()}</Slider>
         <div className={sliderStyles.dots}>
-          {Array(Math.ceil(dataHoPet.length / 2))
-            .fill()
-            .map((_, index) => (
-              <div
-                key={index}
-                className={`${sliderStyles.dot} ${activeSlide === index ? sliderStyles.active : ""}`}
-                onClick={() => setActiveSlide(index)}
-              ></div>
-            ))}
+        {Array(numTotalSlides)
+          .fill()
+          .map((_, index) => (
+            <div
+              key={index}
+              className={`${sliderStyles.dot} ${activeSlide === index ? sliderStyles.active : ""}`}
+              onClick={() => setActiveSlide(index)}
+            ></div>
+        ))}
         </div>
       </div>
     </section>
